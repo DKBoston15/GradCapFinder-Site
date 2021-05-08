@@ -1,54 +1,46 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://www.gradcapfinder.com">
+    <img alt="Gatsby" src="https://res.cloudinary.com/domqwdeiu/image/upload/v1620508096/gradcapfinder/g12_pje119.png" width="240" />
   </a>
 </p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+
+## About
+
+GradCapFinder's Site is a landing page for GradCapFinder (An Educational Consulting LLC focused on supporting master's and doctoral level students finish their degrees).
+
+## Tech Stack
+
+-   React
+-   Typescript
+-   Gatsby.js
+-   Chakra UI
+-   Netlify
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Download Locally**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+    Clone the repo.
 
     ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    git clone https://github.com/DKBoston15/GradCapFinder-Site.git
+    ```
+
+    Install packages
+
+    ```shell
+    cd grad-cap-finder/
+    npm install
     ```
 
 2.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+    Start developing
 
     ```shell
-    cd my-gatsby-site/
     npm run develop
     ```
 
 3.  **Open the code and start customizing!**
 
     Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
