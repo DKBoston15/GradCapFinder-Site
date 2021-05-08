@@ -53860,8 +53860,18 @@ __webpack_require__.r(__webpack_exports__);
 // src/@chakra-ui/gatsby-plugin/theme.js
 
 const theme = {
+  fonts: {
+    heading: "Poppins",
+    body: "Poppins"
+  },
   colors: {
-    primary: "rebeccapurple"
+    brand: {
+      lightBlue: "#8DCAE6",
+      blue: "#209EBC",
+      darkBlue: "#033047",
+      yellow: "#FFB704",
+      orange: "#FA8503"
+    }
   }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__.extendTheme)(theme));
