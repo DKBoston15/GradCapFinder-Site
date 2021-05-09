@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.gradcapfinder.com">
+  <a href="https://nifty-haibt-162826.netlify.app/">
     <img alt="Gatsby" src="https://res.cloudinary.com/domqwdeiu/image/upload/v1620508096/gradcapfinder/g12_pje119.png" width="240" />
   </a>
 </p>
