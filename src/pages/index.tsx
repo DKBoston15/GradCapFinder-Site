@@ -11,7 +11,7 @@ import Footer from "../modules/Footer/Footer";
 
 function IndexPage() {
     return (
-        <Flex flexDirection="column">
+        <Flex flexDirection="column" justify="space-between" w="100%">
             <Hero />
             <Info />
             <Book />
