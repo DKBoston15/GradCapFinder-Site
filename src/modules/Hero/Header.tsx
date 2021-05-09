@@ -7,10 +7,10 @@ import PrimaryButton from "../../components/PrimaryButton";
 const Header = () => {
     return (
         <Flex alignItems="center" justify="space-between" width="90%">
-            <Text fontSize="3xl" fontWeight="700">
+            <Text fontSize={{ base: "xl", md: "3xl" }} fontWeight="700">
                 GradCapFinder
             </Text>
-            <Box>
+            <Box display={{ base: "none", sm: "flex" }}>
                 <PrimaryButton text="Contact Us" variant={false} />
             </Box>
         </Flex>

@@ -9,7 +9,7 @@ const PrimaryButton = ({ text, variant }) => {
                 bg="brand.blue"
                 color="white"
                 p="7"
-                fontSize="18"
+                fontSize={{ base: "14px", md: "18px" }}
                 _hover={{
                     background: "	hsl(192, 71%, 38%)"
                 }}
@@ -26,7 +26,7 @@ const PrimaryButton = ({ text, variant }) => {
                 bg="brand.orange"
                 color="white"
                 p="7"
-                fontSize="18"
+                fontSize={{ base: "14px", md: "18px" }}
                 _hover={{
                     background: "hsl(32, 98%, 45%)"
                 }}

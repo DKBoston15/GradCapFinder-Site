@@ -6,17 +6,34 @@ import PrimaryButton from "../../components/PrimaryButton";
 
 const Header = () => {
     return (
-        <Flex alignItems="center" justify="space-between" width="90%">
+        <Flex
+            alignItems="center"
+            justify="space-between"
+            width="90%"
+            direction={{ base: "column-reverse", md: "row" }}
+        >
             <Flex direction="column">
-                <Text fontSize="5xl" fontWeight="900">
+                <Text
+                    fontSize={{ base: "xl", md: "2xl", lg: "4xl", xl: "5xl" }}
+                    fontWeight="900"
+                    textAlign="center"
+                >
                     Finish your degree,
                     <br /> publish your research,
                     <br /> construct your expertise,
                     <br /> <Text color="brand.blue">become a scholar</Text>
                 </Text>
-                <Flex w="25em" justify="space-between" mt="2em">
+                <Flex
+                    w="25em"
+                    justify="space-between"
+                    alignItems="center"
+                    mt="2em"
+                    direction={{ base: "column", md: "row" }}
+                >
                     <PrimaryButton variant={false} text="Free Consultation" />
-                    <PrimaryButton variant={true} text="Learn More" />
+                    <Flex mt={{ base: "1.5em", md: "0" }}>
+                        <PrimaryButton variant={true} text="Learn More" />
+                    </Flex>
                 </Flex>
             </Flex>
             <Image
