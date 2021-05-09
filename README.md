@@ -14,7 +14,7 @@ GradCapFinder's Site is a landing page for GradCapFinder (An Educational Consult
 -   Typescript
 -   Gatsby.js
 -   Chakra UI
--   Netlify
+-   Netlify (Hosting/Analytics)
 
 ## 🚀 Quick start
 
