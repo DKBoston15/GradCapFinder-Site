@@ -42,7 +42,7 @@ const Info = () => {
             <Flex
                 mt={10}
                 w="90%"
-                direction={{ base: "column-reverse", sm: "row" }}
+                direction={{ base: "column-reverse", md: "row" }}
             >
                 <Map />
                 <Spacer />

@@ -6,10 +6,10 @@ import MapSVG from "./Images/Flag_Map.svg";
 
 const Map = () => {
     return (
-        <Flex direction="column" w={{ base: "100%", sm: "50%" }}>
+        <Flex direction="column" w={{ base: "100%", md: "50%" }}>
             <Image src={MapSVG} alt="Country Map" />
             <Text mt="5" color="brand.gray">
-                Now Shown Above: <br /> Belize, Yemen
+                Not Shown Above: <br /> Belize, Yemen
             </Text>
         </Flex>
     );
