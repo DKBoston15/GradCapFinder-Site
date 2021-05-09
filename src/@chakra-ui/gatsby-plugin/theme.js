@@ -11,7 +11,9 @@ const theme = {
             blue: "#209EBC",
             darkBlue: "#033047",
             yellow: "#FFB704",
-            orange: "#FA8503"
+            orange: "#FA8503",
+            bg: "#F5F6F9",
+            gray: "#8C8C8E"
         }
     }
 };
