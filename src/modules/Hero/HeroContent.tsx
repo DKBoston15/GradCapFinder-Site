@@ -16,7 +16,7 @@ const Header = () => {
                 <Text
                     fontSize={{ base: "xl", md: "2xl", lg: "4xl", xl: "5xl" }}
                     fontWeight="900"
-                    textAlign="center"
+                    textAlign={{ base: "center", md: "left" }}
                 >
                     Finish your degree,
                     <br /> publish your research,
