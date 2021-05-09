@@ -1,6 +1,7 @@
 module.exports = {
     siteMetadata: {
-        title: "GradCapFinder"
+        title: "GradCapFinder",
+        siteUrl: "https://nifty-haibt-162826.netlify.app/"
     },
     plugins: [
         "gatsby-plugin-emotion",
