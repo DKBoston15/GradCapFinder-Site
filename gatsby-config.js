@@ -17,6 +17,13 @@ module.exports = {
         "gatsby-transformer-remark",
         "gatsby-plugin-mdx",
         "gatsby-plugin-sharp",
+        {
+            resolve: `gatsby-plugin-google-fonts`,
+            options: {
+                fonts: [`poppins`],
+                display: "swap"
+            }
+        },
         "gatsby-transformer-sharp",
         {
             resolve: "gatsby-source-filesystem",
