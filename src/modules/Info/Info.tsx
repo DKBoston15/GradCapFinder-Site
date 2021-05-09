@@ -39,7 +39,11 @@ const Info = () => {
             pb={"5em"}
         >
             <CollegeBanner images={images} />
-            <Flex mt={10} w="90%">
+            <Flex
+                mt={10}
+                w="90%"
+                direction={{ base: "column-reverse", sm: "row" }}
+            >
                 <Map />
                 <Spacer />
                 <Why />

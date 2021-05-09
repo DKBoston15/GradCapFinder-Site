@@ -3,7 +3,7 @@ import { Flex, Image, Spacer } from "@chakra-ui/react";
 
 const CollegeBanner = ({ images }) => {
     return (
-        <Flex width="95%">
+        <Flex width="95%" display={{ base: "none", sm: "flex" }}>
             <Image
                 src={images[0].link}
                 alt={images[0].alt}
