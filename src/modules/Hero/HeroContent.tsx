@@ -14,7 +14,7 @@ const Header = () => {
         >
             <Flex direction="column">
                 <Text
-                    fontSize={{ base: "xl", md: "2xl", lg: "4xl", xl: "5xl" }}
+                    fontSize={{ base: "2xl", lg: "4xl", xl: "5xl" }}
                     fontWeight="900"
                     textAlign={{ base: "center", md: "left" }}
                 >
