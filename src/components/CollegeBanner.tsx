@@ -8,28 +8,28 @@ const CollegeBanner = ({ images }) => {
                 src={images[0].link}
                 alt={images[0].alt}
                 objectFit="contain"
-                w="20%"
+                w="15%"
             />
             <Spacer />
             <Image
                 src={images[1].link}
                 alt={images[1].alt}
                 objectFit="contain"
-                w="20%"
+                w="15%"
             />
             <Spacer />
             <Image
                 src={images[2].link}
                 alt={images[2].alt}
                 objectFit="contain"
-                w="20%"
+                w="15%"
             />
             <Spacer />
             <Image
                 src={images[3].link}
                 alt={images[3].alt}
                 objectFit="contain"
-                w="20%"
+                w="15%"
             />
         </Flex>
     );

@@ -13,29 +13,31 @@ import {
 const Book = () => {
     return (
         <Box
-            mt="10em"
-            mb="10em"
-            p="5em 0em 5em 5em"
+            mt="5em"
+            mb="5em"
+            p="2em"
             w="65%"
-            h="25em"
+            h="100%"
             borderRadius="25"
-            backgroundPosition="center"
-            backgroundRepeat="no-repeat"
-            backgroundImage="url('https://res.cloudinary.com/domqwdeiu/image/upload/v1620603698/gradcapfinder/book_card_bg_emoay9.png')"
+            bg="brand.bg"
         >
-            <Flex>
+            <Flex direction="column" alignItems="center">
+                <Text textAlign="center" fontWeight="700" fontSize="lg">
+                    Using experiences selected from working with over 100
+                    successful PhDs, our book provides an overview of the
+                    graduate school experience for learners.
+                </Text>
+                <Box w="50%" h="1" bg="brand.blue" mt="8" mb="3" />
+                <Container w={{ base: "90%", md: "80%", lg: "50%" }}>
+                    <Image
+                        align="center"
+                        objectFit="fill"
+                        src="https://res.cloudinary.com/domqwdeiu/image/upload/v1620601932/gradcapfinder/Book_cover_d3cbxw.png"
+                        alt="GradCapFinder Book Cover"
+                    />
+                </Container>
+                <Spacer />
                 <Container>
-                    <Text
-                        textAlign="center"
-                        fontWeight="700"
-                        fontSize="lg"
-                        mt="-5"
-                    >
-                        Using experiences selected from working with over 100
-                        successful PhDs, our book provides an overview of the
-                        graduate school experience for learners.
-                    </Text>
-                    <Box w="100%" h="1" bg="brand.blue" mt="8" mb="3" />
                     <Text
                         color="brand.orange"
                         fontWeight="700"
@@ -62,14 +64,6 @@ const Book = () => {
                             a learner.
                         </ListItem>
                     </UnorderedList>
-                </Container>
-                <Spacer />
-                <Container w="35%" mr="2.5em">
-                    <Image
-                        objectFit="fill"
-                        src="https://res.cloudinary.com/domqwdeiu/image/upload/v1620601932/gradcapfinder/Book_cover_d3cbxw.png"
-                        alt="GradCapFinder Book Cover"
-                    />
                 </Container>
             </Flex>
         </Box>
