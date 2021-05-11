@@ -53941,7 +53941,8 @@ const theme = {
       darkBlue: "#033047",
       yellow: "#FFB704",
       orange: "#FA8503",
-      bg: "#F5F6F9"
+      bg: "#F5F6F9",
+      gray: "#8C8C8E"
     }
   }
 };
