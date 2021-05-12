@@ -41,7 +41,13 @@ let images = [
 const About = () => {
     return (
         <Flex direction="column" pt="5em" pb="2em" bg="brand.bg">
-            <Flex mb={20} w="90%">
+            <Flex
+                mb={20}
+                w={{ base: "100%", lg: "90%" }}
+                pl={{ base: "4", lg: "0" }}
+                pr={{ base: "4", lg: "0" }}
+                direction={{ base: "column", sm: "column", lg: "row" }}
+            >
                 <Flex
                     direction="column"
                     alignItems="center"
@@ -125,15 +131,11 @@ const About = () => {
                     direction="column"
                     justify="center"
                     alignItems="center"
+                    textAlign={{ base: "center", lg: "left" }}
+                    pt={{ base: "10", sm: "10", lg: "0" }}
                     flex="1"
                 >
-                    <Text
-                        fontWeight="700"
-                        fontSize="3xl"
-                        mb="3"
-                        textAlign="left"
-                        w="100%"
-                    >
+                    <Text fontWeight="700" fontSize="3xl" mb="3" w="100%">
                         Dr. Dane Bozeman
                     </Text>
                     <Text fontSize="md">
