@@ -4,9 +4,12 @@ import {
     Text,
     Container,
     Image,
-    UnorderedList,
-    ListItem
+    List,
+    ListItem,
+    Spacer,
+    ListIcon
 } from "@chakra-ui/react";
+import { InfoIcon } from "@chakra-ui/icons";
 
 //Components
 import CollegeBanner from "../../components/CollegeBanner";
@@ -37,26 +40,100 @@ let images = [
 
 const About = () => {
     return (
-        <Flex direction="column">
-            <Flex>
-                <Container>
+        <Flex direction="column" pt="5em" pb="2em" bg="brand.bg">
+            <Flex mb={20} w="90%">
+                <Flex
+                    direction="column"
+                    alignItems="center"
+                    justify="center"
+                    flex="1"
+                >
                     <Image
                         src="https://res.cloudinary.com/domqwdeiu/image/upload/v1620712575/gradcapfinder/dane_portrait_kljmog.png"
                         alt="Dr. Dane Bozeman"
+                        w="18em"
+                        mb={10}
                     />
                     <PrimaryButton variant={false} text="Free Consultation" />
-                    <UnorderedList>
-                        <ListItem>106 Completed Disertations</ListItem>
-                        <ListItem>2 Book Chapters</ListItem>
-                        <ListItem>2 Peer Reviewed Articles</ListItem>
-                        <ListItem>20+ Policy Papers</ListItem>
-                        <ListItem>20+ Policy Papers</ListItem>
-                        <ListItem>10+ Annual Government Reports</ListItem>
-                        <ListItem>4 Multi-Million Dollar Grants</ListItem>
-                    </UnorderedList>
-                </Container>
-                <Container>
-                    <Text fontWeight="700" fontSize="2xl" mb="3">
+                    <List mt={10} decoration="none" spacing={2}>
+                        <ListItem>
+                            <ListIcon
+                                as={InfoIcon}
+                                w="1.5em"
+                                h="1.5em"
+                                color="brand.blue"
+                            />
+                            106 Completed Disertations
+                        </ListItem>
+                        <ListItem>
+                            <ListIcon
+                                as={InfoIcon}
+                                w="1.5em"
+                                h="1.5em"
+                                color="brand.blue"
+                            />
+                            2 Book Chapters
+                        </ListItem>
+                        <ListItem>
+                            <ListIcon
+                                as={InfoIcon}
+                                w="1.5em"
+                                h="1.5em"
+                                color="brand.blue"
+                            />
+                            2 Peer Reviewed Articles
+                        </ListItem>
+                        <ListItem>
+                            <ListIcon
+                                as={InfoIcon}
+                                w="1.5em"
+                                h="1.5em"
+                                color="brand.blue"
+                            />
+                            20+ Policy Papers
+                        </ListItem>
+                        <ListItem>
+                            <ListIcon
+                                as={InfoIcon}
+                                w="1.5em"
+                                h="1.5em"
+                                color="brand.blue"
+                            />
+                            20+ Policy Papers
+                        </ListItem>
+                        <ListItem>
+                            <ListIcon
+                                as={InfoIcon}
+                                w="1.5em"
+                                h="1.5em"
+                                color="brand.blue"
+                            />
+                            10+ Annual Government Reports
+                        </ListItem>
+                        <ListItem>
+                            <ListIcon
+                                as={InfoIcon}
+                                w="1.5em"
+                                h="1.5em"
+                                color="brand.blue"
+                            />
+                            4 Multi-Million Dollar Grants
+                        </ListItem>
+                    </List>
+                </Flex>
+                <Flex
+                    direction="column"
+                    justify="center"
+                    alignItems="center"
+                    flex="1"
+                >
+                    <Text
+                        fontWeight="700"
+                        fontSize="3xl"
+                        mb="3"
+                        textAlign="left"
+                        w="100%"
+                    >
                         Dr. Dane Bozeman
                     </Text>
                     <Text fontSize="md">
@@ -92,7 +169,7 @@ const About = () => {
                         and take leadership positions in the academy, industry,
                         and public policy arenas.
                     </Text>
-                </Container>
+                </Flex>
             </Flex>
             <CollegeBanner images={images} />
         </Flex>
