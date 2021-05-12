@@ -16,7 +16,7 @@ const Book = () => {
             mt="5em"
             mb="5em"
             p="2em"
-            w="65%"
+            w={{ base: "90%", lg: "65%" }}
             h="100%"
             borderRadius="25"
             bg="brand.bg"
