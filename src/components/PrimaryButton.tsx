@@ -8,6 +8,7 @@ const PrimaryButton = ({ text, variant }) => {
             <Button
                 bg="brand.blue"
                 color="white"
+                boxShadow="lg"
                 p="7"
                 fontSize={{ base: "14px", md: "18px" }}
                 _hover={{
@@ -25,6 +26,7 @@ const PrimaryButton = ({ text, variant }) => {
             <Button
                 bg="brand.orange"
                 color="white"
+                boxShadow="lg"
                 p="7"
                 fontSize={{ base: "14px", md: "18px" }}
                 _hover={{
