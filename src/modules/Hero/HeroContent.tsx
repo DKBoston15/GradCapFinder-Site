@@ -1,8 +1,8 @@
 import React from "react";
-import { Flex, Text, Image, Button } from "@chakra-ui/react";
+import { Flex, Text, Image } from "@chakra-ui/react";
 
 // Components
-import PrimaryButton from "../../components/PrimaryButton";
+import Button from "../../components/Button";
 
 const Header = () => {
     return (
@@ -30,9 +30,9 @@ const Header = () => {
                     mt="2em"
                     direction={{ base: "column", md: "row" }}
                 >
-                    <PrimaryButton variant={false} text="Free Consultation" />
+                    <Button text="Free Consultation" />
                     <Flex mt={{ base: "1.5em", md: "0" }}>
-                        <PrimaryButton variant={true} text="Learn More" />
+                        <Button variant="secondary" text="Learn More" />
                     </Flex>
                 </Flex>
             </Flex>
