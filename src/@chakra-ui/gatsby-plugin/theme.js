@@ -15,6 +15,47 @@ const theme = {
             bg: "#F5F6F9",
             gray: "#8C8C8E"
         }
+    },
+    components: {
+        Checkbox: {
+            baseStyle: {
+                control: {
+                    bg: "#F5F6F9",
+                    color: "black",
+                    borderRadius: "15",
+                    borderColor: "#E3E8EF",
+                    boxShadow: "0 0 3pt 2pt #F5F6F9",
+                    _checked: {
+                        bg: "#FA8503",
+                        outline: "none",
+                        borderColor: "#FA8503",
+                        _hover: {
+                            bg: "#FA8503",
+                            outline: "none",
+                            color: "white",
+                            borderColor: "#FA8503"
+                        }
+                    },
+                    _focus: {
+                        outline: "none",
+                        borderColor: "#E3E8EF",
+                        boxShadow: "none"
+                    },
+                    _hover: {
+                        bg: "#FA8503",
+                        outline: "none",
+                        color: "white",
+                        borderColor: "#FA8503",
+                        _checked: {
+                            bg: "#FA8503",
+                            outline: "none",
+                            color: "white",
+                            borderColor: "#FA8503"
+                        }
+                    }
+                }
+            }
+        }
     }
 };
 
