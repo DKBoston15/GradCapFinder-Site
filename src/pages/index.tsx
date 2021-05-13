@@ -1,6 +1,7 @@
 import React from "react";
 import { Flex } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
+
 // Components
 import Hero from "../modules/Hero/Hero";
 import Info from "../modules/Info/Info";

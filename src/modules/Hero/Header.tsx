@@ -1,8 +1,8 @@
 import React from "react";
-import { Box, Flex, Button, Spacer, Text } from "@chakra-ui/react";
+import { Box, Flex, Spacer, Text } from "@chakra-ui/react";
 
 // Components
-import PrimaryButton from "../../components/PrimaryButton";
+import Button from "../../components/Button";
 
 const Header = () => {
     return (
@@ -11,7 +11,7 @@ const Header = () => {
                 GradCapFinder
             </Text>
             <Box display={{ base: "none", sm: "flex" }}>
-                <PrimaryButton text="Contact Us" variant={false} />
+                <Button text="Contact Us" />
             </Box>
         </Flex>
     );
