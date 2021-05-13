@@ -6,7 +6,7 @@ const Video = ({ link }) => {
         <Box
             borderRadius="25"
             overflow="hidden"
-            w="40%"
+            w={{ base: "80%", md: "60%", lg: "60%", xl: "40%" }}
             height="25em"
             mt="5"
             mb="5"
