@@ -53953,7 +53953,6 @@ const theme = {
           color: "black",
           borderRadius: "15",
           borderColor: "#E3E8EF",
-          boxShadow: "0 0 3pt 2pt #F5F6F9",
           _checked: {
             bg: "#FA8503",
             outline: "none",
