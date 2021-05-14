@@ -13,7 +13,7 @@ import { InfoIcon } from "@chakra-ui/icons";
 
 //Components
 import CollegeBanner from "../../components/CollegeBanner";
-import PrimaryButton from "../../components/PrimaryButton";
+import Button from "../../components/Button";
 
 let images = [
     {
@@ -60,7 +60,7 @@ const About = () => {
                         w="18em"
                         mb={10}
                     />
-                    <PrimaryButton variant={false} text="Free Consultation" />
+                    <Button text="Free Consultation" />
                     <List mt={10} decoration="none" spacing={2}>
                         <ListItem>
                             <ListIcon
