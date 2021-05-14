@@ -11,6 +11,8 @@ const ContactUs = () => {
             justify="center"
             alignItems="center"
             bg="brand.bg"
+            pt="1em"
+            pb="2em"
         >
             <Text fontWeight="700" fontSize="4xl">
                 Contact Us
