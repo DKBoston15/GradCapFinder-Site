@@ -1,5 +1,6 @@
 import React from "react";
 import { Flex, Text, Image } from "@chakra-ui/react";
+import { Link } from "react-scroll";
 
 // Components
 import Button from "../../components/Button";
@@ -32,7 +33,9 @@ const Header = () => {
                 >
                     <Button text="Free Consultation" />
                     <Flex mt={{ base: "1.5em", md: "0" }}>
-                        <Button variant="secondary" text="Learn More" />
+                        <Link to="info" smooth={true} duration={1000}>
+                            <Button variant="secondary" text="Learn More" />
+                        </Link>
                     </Flex>
                 </Flex>
             </Flex>

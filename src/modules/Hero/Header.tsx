@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Flex, Spacer, Text } from "@chakra-ui/react";
-
+import { Link } from "react-scroll";
 // Components
 import Button from "../../components/Button";
 
@@ -11,7 +11,9 @@ const Header = () => {
                 GradCapFinder
             </Text>
             <Box display={{ base: "none", sm: "flex" }}>
-                <Button text="Contact Us" />
+                <Link to="contact" smooth={true} duration={1000}>
+                    <Button text="Contact Us" />
+                </Link>
             </Box>
         </Flex>
     );
