@@ -22,6 +22,7 @@ const ContactForm = () => {
             direction="column"
             w={{ sm: "27em", md: "35em" }}
         >
+            {/* @ts-ignore */}
             <form name="contact-us" netlify>
                 <FormControl id="name">
                     <FormLabel>Name</FormLabel>
