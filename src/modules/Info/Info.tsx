@@ -31,6 +31,7 @@ const Info = () => {
     ];
     return (
         <Flex
+            id="info"
             width="100%"
             direction="column"
             alignItems="center"

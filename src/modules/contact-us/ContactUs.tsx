@@ -7,6 +7,7 @@ import ContactForm from "./ContactForm";
 const ContactUs = () => {
     return (
         <Flex
+            id="contact"
             direction="column"
             justify="center"
             alignItems="center"

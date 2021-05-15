@@ -60,7 +60,7 @@ const About = () => {
                         w="18em"
                         mb={10}
                     />
-                    <Button text="Free Consultation" />
+                    <Button text="Free Consultation" calendly={true} />
                     <List mt={10} decoration="none" spacing={2}>
                         <ListItem>
                             <ListIcon
