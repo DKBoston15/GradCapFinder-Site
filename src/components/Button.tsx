@@ -1,14 +1,28 @@
 import React, { useMemo, ReactNode } from "react";
 import { Button, ButtonProps } from "@chakra-ui/react";
+import { openPopupWidget } from "react-calendly";
 
 type TVariant = "primary" | "secondary";
 interface IButtonProps extends ButtonProps {
     text: ReactNode;
     variant?: TVariant;
     width?: string;
+    calendly?: boolean;
 }
 
-const PrimaryButton = ({ text, variant = "primary", width }: IButtonProps) => {
+const openCalendly = () => {
+    let options = {
+        url: "https://calendly.com/gradcapfinder/free-consultation"
+    };
+    openPopupWidget(options);
+};
+
+const PrimaryButton = ({
+    text,
+    variant = "primary",
+    width,
+    calendly
+}: IButtonProps) => {
     const buttonVariantMapper: Record<TVariant, JSX.Element> = useMemo(
         () => ({
             primary: (
@@ -25,6 +39,7 @@ const PrimaryButton = ({ text, variant = "primary", width }: IButtonProps) => {
                     _focus={{
                         border: "none"
                     }}
+                    onClick={calendly ? openCalendly : undefined}
                 >
                     {text}
                 </Button>
@@ -43,6 +58,7 @@ const PrimaryButton = ({ text, variant = "primary", width }: IButtonProps) => {
                     _focus={{
                         border: "none"
                     }}
+                    onClick={calendly ? openCalendly : undefined}
                 >
                     {text}
                 </Button>

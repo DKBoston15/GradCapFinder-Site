@@ -1,10 +1,19 @@
 import React from "react";
 import { Flex, Text, Image } from "@chakra-ui/react";
+import { Link } from "react-scroll";
+import { openPopupWidget } from "react-calendly";
 
 // Components
 import Button from "../../components/Button";
 
 const Header = () => {
+    const openCalendly = () => {
+        let options = {
+            url: "https://calendly.com/gradcapfinder"
+        };
+        openPopupWidget(options);
+    };
+
     return (
         <Flex
             alignItems="center"
@@ -30,9 +39,11 @@ const Header = () => {
                     mt="2em"
                     direction={{ base: "column", md: "row" }}
                 >
-                    <Button text="Free Consultation" />
+                    <Button text="Free Consultation" calendly={true} />
                     <Flex mt={{ base: "1.5em", md: "0" }}>
-                        <Button variant="secondary" text="Learn More" />
+                        <Link to="info" smooth={true} duration={1000}>
+                            <Button variant="secondary" text="Learn More" />
+                        </Link>
                     </Flex>
                 </Flex>
             </Flex>

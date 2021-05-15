@@ -20,7 +20,7 @@ const Footer = () => {
             >
                 GradCapFinder
             </Text>
-            <Button text="Free Consultation" />
+            <Button text="Free Consultation" calendly={true} />
         </Flex>
     );
 };
