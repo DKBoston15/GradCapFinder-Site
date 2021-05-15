@@ -16,7 +16,6 @@ const Video = ({ link }) => {
                 height="100%"
                 src={link}
                 title="Testimonial"
-                frameborder={0}
                 allowfullscreen
             ></iframe>
         </Box>
