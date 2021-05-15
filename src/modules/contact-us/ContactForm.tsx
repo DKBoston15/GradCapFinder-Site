@@ -7,14 +7,18 @@ import {
     Textarea,
     Checkbox,
     CheckboxGroup,
-    Text
+    Text,
+    Button
 } from "@chakra-ui/react";
 
 // Components
 import CustomSelect from "./CustomSelect";
-import Button from "../../components/Button";
 
 const ContactForm = () => {
+    const onSubmit = (event) => {
+        console.log(event.target);
+        event.preventDefault();
+    };
     return (
         <Flex
             justify="center"
@@ -23,10 +27,10 @@ const ContactForm = () => {
             w={{ sm: "27em", md: "35em" }}
         >
             {/* @ts-ignore */}
-            <form name="contact-us" netlify>
+            <form name="contact-us" netlify onSubmit={onSubmit}>
                 <FormControl id="name">
                     <FormLabel>Name</FormLabel>
-                    <Input bg="white" type="email" />
+                    <Input bg="white" />
                 </FormControl>
                 <FormControl id="email">
                     <FormLabel>Email address</FormLabel>
@@ -83,7 +87,14 @@ const ContactForm = () => {
                     </Flex>
                 </FormControl>
                 <Flex w={{ sm: "27em", md: "35em" }} justify="center" mt="2em">
-                    <Button text="Submit" width="100%" type="submit" />
+                    <Button
+                        width="100%"
+                        type="submit"
+                        color="white"
+                        bg="brand.orange"
+                    >
+                        Submit
+                    </Button>
                 </Flex>
             </form>
         </Flex>
