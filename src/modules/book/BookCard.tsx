@@ -29,12 +29,14 @@ const Book = () => {
                 </Text>
                 <Box w="50%" h="1" bg="brand.blue" mt="8" mb="3" />
                 <Container w={{ base: "90%", md: "80%", lg: "50%" }}>
-                    <Image
-                        align="center"
-                        objectFit="fill"
-                        src="https://res.cloudinary.com/domqwdeiu/image/upload/v1620601932/gradcapfinder/Book_cover_d3cbxw.png"
-                        alt="GradCapFinder Book Cover"
-                    />
+                    <a href="https://www.amazon.com/Graduate-School-Marathon-Dane-Bozeman-ebook/dp/B08FZ1GBJG/ref=sr_1_1?dchild=1&keywords=graduate+school+is+a+marathon&qid=1621119256&sr=8-1">
+                        <Image
+                            align="center"
+                            objectFit="fill"
+                            src="https://res.cloudinary.com/domqwdeiu/image/upload/v1620601932/gradcapfinder/Book_cover_d3cbxw.png"
+                            alt="GradCapFinder Book Cover"
+                        />
+                    </a>
                 </Container>
                 <Spacer />
                 <Container>
