@@ -6,26 +6,27 @@ import CollegeBanner from "../../components/CollegeBanner";
 import Map from "./Map";
 import Why from "./Why";
 
+import tamu from "./images/tamu.png";
+import chicago from "./images/chicago.png";
+import harvard from "./images/harvard.png";
+import vanderbilt from "./images/vanderbilt.png";
+
 const Info = () => {
     let images = [
         {
-            link:
-                "https://res.cloudinary.com/domqwdeiu/image/upload/v1620597298/gradcapfinder/TAMU_joeqoa.png",
+            link: tamu,
             alt: "Texas A&M University"
         },
         {
-            link:
-                "https://res.cloudinary.com/domqwdeiu/image/upload/v1620597299/gradcapfinder/UCHICAGO_obb9hx.png",
+            link: chicago,
             alt: "University of Chicago"
         },
         {
-            link:
-                "https://res.cloudinary.com/domqwdeiu/image/upload/v1620597298/gradcapfinder/HARVARD_roofxj.png",
+            link: harvard,
             alt: "Harvard University"
         },
         {
-            link:
-                "https://res.cloudinary.com/domqwdeiu/image/upload/v1620597299/gradcapfinder/VANDERBILT_kindlp.png",
+            link: vanderbilt,
             alt: "Vanderbilt University"
         }
     ];
