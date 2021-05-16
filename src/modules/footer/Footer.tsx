@@ -10,13 +10,15 @@ const Footer = () => {
             bg="brand.blue"
             h="10em"
             justify="space-between"
-            p={{ base: "2em 2em", md: "2em 4em" }}
+            p="2em 4em"
             alignItems="center"
+            direction={{ base: "column", sm: "row" }}
         >
             <Text
                 fontSize={{ base: "2xl", md: "3xl" }}
                 fontWeight="700"
                 color="white"
+                mr={{ base: "0", sm: "1em" }}
             >
                 GradCapFinder
             </Text>

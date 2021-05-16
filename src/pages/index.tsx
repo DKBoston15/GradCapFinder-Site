@@ -13,7 +13,7 @@ import Footer from "../modules/footer/Footer";
 
 function IndexPage() {
     return (
-        <Flex flexDirection="column" justify="space-between" w="100%">
+        <Flex flexDirection="column" justify="space-between">
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>GradCapFinder</title>
