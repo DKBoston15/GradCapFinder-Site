@@ -8,7 +8,8 @@ import {
     Checkbox,
     CheckboxGroup,
     Text,
-    Button
+    Button,
+    Container
 } from "@chakra-ui/react";
 import emailjs from "emailjs-com";
 
@@ -74,11 +75,11 @@ const ContactForm = () => {
             );
     }
     return (
-        <Flex
+        <Container
             justify="center"
             alignItems="center"
             direction="column"
-            w={{ sm: "27em", md: "35em" }}
+            w="100%"
         >
             {/* @ts-ignore */}
             <form name="contact-us" id="contact-form" onSubmit={sendEmail}>
@@ -110,27 +111,21 @@ const ContactForm = () => {
                         onChange={onChange}
                     />
                 </FormControl>
-                <Text>Services</Text>
-                <Flex justify="center">
+                <Text>Select the services in which we can help</Text>
+                <Flex
+                    direction={{ base: "column", sm: "row" }}
+                    justify="center"
+                >
                     <CheckboxGroup
                         id="services"
                         onChange={onChange}
                         value={services}
                     >
-                        <Flex direction="column" m="1em">
-                            <Checkbox
-                                size="8xl"
-                                value="Consulting"
-                                mb=".5em"
-                                icon={<CustomSelect text="Consulting" />}
-                            />
-                            <Checkbox
-                                size="8xl"
-                                value="Writing"
-                                icon={<CustomSelect text="Writing" />}
-                            />
-                        </Flex>
-                        <Flex direction="column" m="1em">
+                        <Flex
+                            direction="column"
+                            m={{ base: "0em 1em", sm: "1em 1em" }}
+                            mt=".5em"
+                        >
                             <Checkbox
                                 size="8xl"
                                 value="Analysis"
@@ -139,16 +134,35 @@ const ContactForm = () => {
                             />
                             <Checkbox
                                 size="8xl"
-                                value="Grants"
-                                icon={<CustomSelect text="Grants" />}
+                                value="Professionalism"
+                                icon={<CustomSelect text="Professionalism" />}
                             />
                         </Flex>
-                        <Flex direction="column" m="1em">
+                        <Flex
+                            direction="column"
+                            m={{ base: ".5em 1em", sm: "1em 1em" }}
+                        >
                             <Checkbox
                                 size="8xl"
+                                value="Career"
                                 mb=".5em"
-                                value="Graduate School"
-                                icon={<CustomSelect text="University" />}
+                                icon={<CustomSelect text="Career" />}
+                            />
+                            <Checkbox
+                                size="8xl"
+                                value="Writing"
+                                icon={<CustomSelect text="Writing" />}
+                            />
+                        </Flex>
+                        <Flex
+                            direction="column"
+                            m={{ base: ".5em 1em", sm: "1em 1em" }}
+                        >
+                            <Checkbox
+                                size="8xl"
+                                value="Grants"
+                                mb=".5em"
+                                icon={<CustomSelect text="Grants" />}
                             />
                             <Checkbox
                                 size="8xl"
@@ -158,7 +172,7 @@ const ContactForm = () => {
                         </Flex>
                     </CheckboxGroup>
                 </Flex>
-                <Flex w={{ sm: "27em", md: "35em" }} justify="center" mt="2em">
+                <Flex justify="center" mt="2em">
                     <Button
                         width="100%"
                         type="submit"
@@ -169,7 +183,7 @@ const ContactForm = () => {
                     </Button>
                 </Flex>
             </form>
-        </Flex>
+        </Container>
     );
 };
 

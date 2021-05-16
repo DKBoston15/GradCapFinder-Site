@@ -36,7 +36,7 @@ const Header = () => {
                     <br /> <Text color="brand.blue">become a scholar</Text>
                 </Text>
                 <Flex
-                    w="25em"
+                    w="100%"
                     justify="space-between"
                     alignItems="center"
                     mt="2em"
@@ -50,7 +50,7 @@ const Header = () => {
                     </Flex>
                 </Flex>
             </Flex>
-            <Image boxSize="50%" src={heroImage} alt="Graduating Students" />
+            <Image boxSize="48%" src={heroImage} alt="Graduating Students" />
         </Flex>
     );
 };

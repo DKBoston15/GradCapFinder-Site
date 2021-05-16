@@ -14,7 +14,6 @@ const ContactUs = () => {
             bg="brand.bg"
             pt="1em"
             pb="2em"
-            w="100%"
         >
             <Text fontWeight="700" fontSize="4xl">
                 Contact Us

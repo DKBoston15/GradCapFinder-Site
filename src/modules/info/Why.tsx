@@ -11,16 +11,16 @@ const Why = () => {
                 Why Work With GradCapFinder?
             </Text>
             <Feature
-                title="Experienced"
-                description="We developed our system through years of work with graduate students in the Life, Physical,  and Social sciences as well as the Humanities. "
+                title="Community"
+                description="We find successful PhD’s create community. We help graduate students identify the members of their community. The world map on this page represents our community of PhDs."
             />
             <Feature
-                title="Remote"
-                description="Since the beginning we have worked with students all over the world from the United States to Bahrain and Argentina."
+                title="Assessment"
+                description="We recognize successful PhD's journey to assess themselves and their work. We provide students with ways to constructively assess themselves and their work. We know PhDs all over the world who continually assess themselves and their work."
             />
             <Feature
-                title="Passionate"
-                description="We live and breath what we do everyday, and what we do is help coach and prepare graduate students to finish their degree and become scholars. We even wrote a book about it!"
+                title="Knowledge"
+                description="We value successful PhD’s efforts to produce knowledge for the world to consume. We help PhDs turn their efforts into knowledge. Join our global community of knowledge makers."
             />
         </Flex>
     );

@@ -4,12 +4,12 @@ import { Flex } from "@chakra-ui/react";
 // Components
 import BookCard from "./BookCard";
 
-// Images
-import bookCover from "./images/book-cover.png";
-
 const Book = () => {
     return (
-        <Flex justify="center" backgroundImage="url(bookCover)">
+        <Flex
+            justify="center"
+            backgroundImage="url(https://res.cloudinary.com/domqwdeiu/image/upload/v1620601933/gradcapfinder/book_bg_al5l1m.png)"
+        >
             <BookCard />
         </Flex>
     );
