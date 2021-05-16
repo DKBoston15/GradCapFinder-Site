@@ -2,7 +2,7 @@ import React from "react";
 import { Flex, Image, Text } from "@chakra-ui/react";
 
 // SVG
-import MapSVG from "./Images/Flag_Map.svg";
+import MapSVG from "./images/Flag_Map.svg";
 
 const Map = () => {
     return (

@@ -6,6 +6,9 @@ import { openPopupWidget } from "react-calendly";
 // Components
 import Button from "../../components/Button";
 
+// Images
+import heroImage from "./images/hero-image.jpg";
+
 const Header = () => {
     const openCalendly = () => {
         let options = {
@@ -47,11 +50,7 @@ const Header = () => {
                     </Flex>
                 </Flex>
             </Flex>
-            <Image
-                boxSize="50%"
-                src="https://res.cloudinary.com/domqwdeiu/image/upload/v1620541790/gradcapfinder/HeroImage_ngscbz.jpg"
-                alt="Graduating Students"
-            />
+            <Image boxSize="50%" src={heroImage} alt="Graduating Students" />
         </Flex>
     );
 };

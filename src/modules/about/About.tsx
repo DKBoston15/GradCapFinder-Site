@@ -11,29 +11,32 @@ import {
 } from "@chakra-ui/react";
 import { InfoIcon } from "@chakra-ui/icons";
 
+// Images
+import mit from "./images/mit.png";
+import usc from "./images/usc.png";
+import texasTech from "./images/texas-tech.png";
+import oregon from "./images/oregon.png";
+import dane from "./images/dane-portrait.png";
+
 //Components
 import CollegeBanner from "../../components/CollegeBanner";
 import Button from "../../components/Button";
 
 let images = [
     {
-        link:
-            "https://res.cloudinary.com/domqwdeiu/image/upload/v1620706692/gradcapfinder/mark3-removebg-preview_1_bllpfh.png",
+        link: mit,
         alt: "Massachusetts Institute of Technology"
     },
     {
-        link:
-            "https://res.cloudinary.com/domqwdeiu/image/upload/v1620706693/gradcapfinder/usc__1_-removebg-preview_1_bacgyr.png",
+        link: usc,
         alt: "University of Southern California"
     },
     {
-        link:
-            "https://res.cloudinary.com/domqwdeiu/image/upload/v1620706693/gradcapfinder/Texas-Tech-logo_1_po6ekf.png",
+        link: texasTech,
         alt: "Texas Tech University"
     },
     {
-        link:
-            "https://res.cloudinary.com/domqwdeiu/image/upload/v1620706693/gradcapfinder/oregon_1_ts0ywt.png",
+        link: oregon,
         alt: "University of Oregon"
     }
 ];
@@ -54,12 +57,7 @@ const About = () => {
                     justify="center"
                     flex="1"
                 >
-                    <Image
-                        src="https://res.cloudinary.com/domqwdeiu/image/upload/v1620712575/gradcapfinder/dane_portrait_kljmog.png"
-                        alt="Dr. Dane Bozeman"
-                        w="18em"
-                        mb={10}
-                    />
+                    <Image src={dane} alt="Dr. Dane Bozeman" w="18em" mb={10} />
                     <Button text="Free Consultation" calendly={true} />
                     <List mt={10} decoration="none" spacing={2}>
                         <ListItem>
