@@ -3549,10 +3549,10 @@
   dependencies:
     "@babel/helper-define-polyfill-provider" "^0.2.0"
 
-"babel-plugin-remove-graphql-queries@^3.4.0":
-  "integrity" "sha512-ADn0az4QeBIvvz18kByGv9Q7xUyYKPCNFISt3THiqPrYejj1zrk7BW/End47g2Iav1Q9SrX2GdPxaiz/svSn3A=="
-  "resolved" "https://registry.npmjs.org/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-3.4.0.tgz"
-  "version" "3.4.0"
+"babel-plugin-remove-graphql-queries@^3.4.0", "babel-plugin-remove-graphql-queries@^3.5.0":
+  "integrity" "sha512-JGVMfrPk7TwRSDxs8Rro748SbSrj+5h4iQvbE5dfUIUOELVoPm9FrhiEn/kIMvwd+nMgn8td9sg0Pp24HtjZlQ=="
+  "resolved" "https://registry.npmjs.org/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-3.5.0.tgz"
+  "version" "3.5.0"
 
 "babel-plugin-transform-react-remove-prop-types@^0.4.24":
   "integrity" "sha512-eqj0hVcJUR57/Ug2zE1Yswsw4LhuqqHhD+8v120T1cl3kjg76QwtyBrdIk4WVwK+lAhBJVYCd/v+4nc4y+8JsA=="
@@ -6908,10 +6908,10 @@
     "yoga-layout-prebuilt" "^1.9.6"
     "yurnalist" "^2.1.0"
 
-"gatsby-core-utils@^2.4.0":
-  "integrity" "sha512-vGsPnEFSI+9ZcCVLB2am2eWnleadljUc+zDngea2szam/YUBxq2kSlNfpzlSSWpGyiIIHXXuSc0ttQOKgta1HQ=="
-  "resolved" "https://registry.npmjs.org/gatsby-core-utils/-/gatsby-core-utils-2.4.0.tgz"
-  "version" "2.4.0"
+"gatsby-core-utils@^2.4.0", "gatsby-core-utils@^2.5.0":
+  "integrity" "sha512-YbKv7FLpeTCts28bv0H2lSuHrKgUxnsC1ZG1PPydOheQgPW9G8pdNlYvwZzGJmmS7rBcC/w859ss90wlvF6GEw=="
+  "resolved" "https://registry.npmjs.org/gatsby-core-utils/-/gatsby-core-utils-2.5.0.tgz"
+  "version" "2.5.0"
   dependencies:
     "ci-info" "2.0.0"
     "configstore" "^5.0.1"
@@ -6972,21 +6972,21 @@
   "resolved" "https://registry.npmjs.org/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-1.0.1.tgz"
   "version" "1.0.1"
 
-"gatsby-plugin-image@^1.4.1":
-  "integrity" "sha512-7qzP+yBK5KMiBE+m1XZTlPUWdWNCUAqXXachuWxnkzNyOICMISKDSsqMEjBrxTXDr36awwaVyD6dyTvW0fvzQg=="
-  "resolved" "https://registry.npmjs.org/gatsby-plugin-image/-/gatsby-plugin-image-1.4.1.tgz"
-  "version" "1.4.1"
+"gatsby-plugin-image@^1.5.0":
+  "integrity" "sha512-/tEy3/Hc0W60RUaOUuU+nHXrOqBwEeDmdHl7j8GJuHCm4LqlYzBtCAXM3ypeQgoMHQj/xKN91wEdIbX8BU8e9A=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-image/-/gatsby-plugin-image-1.5.0.tgz"
+  "version" "1.5.0"
   dependencies:
     "@babel/code-frame" "^7.12.13"
     "@babel/parser" "^7.12.5"
     "@babel/traverse" "^7.12.5"
     "babel-jsx-utils" "^1.1.0"
-    "babel-plugin-remove-graphql-queries" "^3.4.0"
+    "babel-plugin-remove-graphql-queries" "^3.5.0"
     "camelcase" "^5.3.1"
     "chokidar" "^3.5.1"
     "common-tags" "^1.8.0"
     "fs-extra" "^8.1.0"
-    "gatsby-core-utils" "^2.4.0"
+    "gatsby-core-utils" "^2.5.0"
     "objectFitPolyfill" "^2.3.0"
     "prop-types" "^15.7.2"
 
@@ -7065,18 +7065,18 @@
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-"gatsby-plugin-sharp@^3.0.0-next.0", "gatsby-plugin-sharp@^3.4.2":
-  "integrity" "sha512-0fr6Oemfj4DeRinisH6I1BVsMV6WujXNtS94FV+ayar6Cr8kdzl8rgwEiW7egXbHsG1xKnYnzQ0zQACT9S47AA=="
-  "resolved" "https://registry.npmjs.org/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.4.2.tgz"
-  "version" "3.4.2"
+"gatsby-plugin-sharp@^3.0.0-next.0", "gatsby-plugin-sharp@^3.5.0":
+  "integrity" "sha512-FUbFPHFB0vkFLGMeSHa4qXuaky3oWxMeYUTooUDU73wCWuJzoSrS99FzE6DJsUv8Eitwf+Jys3YqlC87x4WAfg=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.5.0.tgz"
+  "version" "3.5.0"
   dependencies:
     "@babel/runtime" "^7.12.5"
     "async" "^3.2.0"
     "bluebird" "^3.7.2"
     "filenamify" "^4.2.0"
     "fs-extra" "^9.1.0"
-    "gatsby-core-utils" "^2.4.0"
-    "gatsby-telemetry" "^2.4.1"
+    "gatsby-core-utils" "^2.5.0"
+    "gatsby-telemetry" "^2.5.0"
     "got" "^10.7.0"
     "imagemin" "^7.0.1"
     "imagemin-mozjpeg" "^9.0.0"
@@ -7193,17 +7193,17 @@
     "xstate" "^4.9.1"
     "yoga-layout-prebuilt" "^1.9.6"
 
-"gatsby-source-filesystem@^3.0.0-next.0", "gatsby-source-filesystem@^3.4.0":
-  "integrity" "sha512-kw55JXz6xA99/4pI0JClJre+be5GQA0mpUhuslY9Bg/VVatFmEcxnmirrWzpEIE8OF0jtUlfZHSZu68aB5UnLQ=="
-  "resolved" "https://registry.npmjs.org/gatsby-source-filesystem/-/gatsby-source-filesystem-3.4.0.tgz"
-  "version" "3.4.0"
+"gatsby-source-filesystem@^3.0.0-next.0", "gatsby-source-filesystem@^3.5.0":
+  "integrity" "sha512-o0JGFGHwjqgy1IciifMoMek/ulpO/lvwhpAxxjpDl3vqzO6beoAdaLrLe6zRn403XXSA14TDP9KUNfePLlp1lg=="
+  "resolved" "https://registry.npmjs.org/gatsby-source-filesystem/-/gatsby-source-filesystem-3.5.0.tgz"
+  "version" "3.5.0"
   dependencies:
     "@babel/runtime" "^7.12.5"
     "better-queue" "^3.8.10"
     "chokidar" "^3.4.3"
     "file-type" "^16.0.0"
     "fs-extra" "^8.1.0"
-    "gatsby-core-utils" "^2.4.0"
+    "gatsby-core-utils" "^2.5.0"
     "got" "^9.6.0"
     "md5-file" "^5.0.0"
     "mime" "^2.4.6"
@@ -7212,10 +7212,10 @@
     "valid-url" "^1.0.9"
     "xstate" "^4.14.0"
 
-"gatsby-telemetry@^2.4.1":
-  "integrity" "sha512-VLlZvFCdpCCT0mxnSK1UE/uD7NY/7Sj5vwvv09WRDlIGw6qaUJFWLIav99WXocbIN0FvYKKGIbmIUlmBnhxzVA=="
-  "resolved" "https://registry.npmjs.org/gatsby-telemetry/-/gatsby-telemetry-2.4.1.tgz"
-  "version" "2.4.1"
+"gatsby-telemetry@^2.4.1", "gatsby-telemetry@^2.5.0":
+  "integrity" "sha512-PbyYw74t/RLVbEWicjAdrCMttV1GSbuHZit0PsVPqqwNlL1LalJa/V7lcVMqqGrEbkB+fUoKkk1u2o+TDgvIng=="
+  "resolved" "https://registry.npmjs.org/gatsby-telemetry/-/gatsby-telemetry-2.5.0.tgz"
+  "version" "2.5.0"
   dependencies:
     "@babel/code-frame" "^7.10.4"
     "@babel/runtime" "^7.12.5"
@@ -7225,7 +7225,7 @@
     "boxen" "^4.2.0"
     "configstore" "^5.0.1"
     "fs-extra" "^8.1.0"
-    "gatsby-core-utils" "^2.4.0"
+    "gatsby-core-utils" "^2.5.0"
     "git-up" "^4.0.2"
     "is-docker" "^2.1.1"
     "lodash" "^4.17.21"
@@ -7260,10 +7260,10 @@
     "unist-util-select" "^3.0.4"
     "unist-util-visit" "^2.0.3"
 
-"gatsby-transformer-sharp@^3.4.0":
-  "integrity" "sha512-Hdohyzeef8lRV7D/UK/WWZL2PfPe3FcMW4/MPAuZvRskPPkKcdLm0Qo3XXugt8KyfzaWzJSi0ltvpRpxA7aj9g=="
-  "resolved" "https://registry.npmjs.org/gatsby-transformer-sharp/-/gatsby-transformer-sharp-3.4.0.tgz"
-  "version" "3.4.0"
+"gatsby-transformer-sharp@^3.5.0":
+  "integrity" "sha512-hgmm2PGfkvTOKBUWWFWVZfPFEaDMagDNLk9hJexkZwpnML+ambxUnwt2s3mMMR0iNh67WJGrg+UDg43PvyNcwA=="
+  "resolved" "https://registry.npmjs.org/gatsby-transformer-sharp/-/gatsby-transformer-sharp-3.5.0.tgz"
+  "version" "3.5.0"
   dependencies:
     "@babel/runtime" "^7.12.5"
     "bluebird" "^3.7.2"
