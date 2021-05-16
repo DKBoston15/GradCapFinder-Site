@@ -10,6 +10,8 @@ import {
     ListItem
 } from "@chakra-ui/react";
 
+import bookCover from "./images/book-cover.png";
+
 const Book = () => {
     return (
         <Box
@@ -33,7 +35,7 @@ const Book = () => {
                         <Image
                             align="center"
                             objectFit="fill"
-                            src="https://res.cloudinary.com/domqwdeiu/image/upload/v1620601932/gradcapfinder/Book_cover_d3cbxw.png"
+                            src={bookCover}
                             alt="GradCapFinder Book Cover"
                         />
                     </a>

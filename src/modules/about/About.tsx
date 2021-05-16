@@ -60,14 +60,14 @@ const About = () => {
                     <Image src={dane} alt="Dr. Dane Bozeman" w="18em" mb={10} />
                     <Button text="Free Consultation" calendly={true} />
                     <List mt={10} decoration="none" spacing={2}>
-                        <ListItem>
+                        <ListItem fontWeight="900">
                             <ListIcon
                                 as={InfoIcon}
                                 w="1.5em"
                                 h="1.5em"
                                 color="brand.blue"
                             />
-                            106 Completed Disertations
+                            106 completed disertations
                         </ListItem>
                         <ListItem>
                             <ListIcon
@@ -76,7 +76,7 @@ const About = () => {
                                 h="1.5em"
                                 color="brand.blue"
                             />
-                            2 Book Chapters
+                            Multiple peer reviewed articles
                         </ListItem>
                         <ListItem>
                             <ListIcon
@@ -85,7 +85,7 @@ const About = () => {
                                 h="1.5em"
                                 color="brand.blue"
                             />
-                            2 Peer Reviewed Articles
+                            Dozens of policy papers
                         </ListItem>
                         <ListItem>
                             <ListIcon
@@ -94,7 +94,7 @@ const About = () => {
                                 h="1.5em"
                                 color="brand.blue"
                             />
-                            20+ Policy Papers
+                            Numerous government reports
                         </ListItem>
                         <ListItem>
                             <ListIcon
@@ -103,25 +103,7 @@ const About = () => {
                                 h="1.5em"
                                 color="brand.blue"
                             />
-                            20+ Policy Papers
-                        </ListItem>
-                        <ListItem>
-                            <ListIcon
-                                as={InfoIcon}
-                                w="1.5em"
-                                h="1.5em"
-                                color="brand.blue"
-                            />
-                            10+ Annual Government Reports
-                        </ListItem>
-                        <ListItem>
-                            <ListIcon
-                                as={InfoIcon}
-                                w="1.5em"
-                                h="1.5em"
-                                color="brand.blue"
-                            />
-                            4 Multi-Million Dollar Grants
+                            4 multi-million dollar NSF grants
                         </ListItem>
                     </List>
                 </Flex>

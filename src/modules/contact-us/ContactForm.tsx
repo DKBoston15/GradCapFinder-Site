@@ -110,7 +110,7 @@ const ContactForm = () => {
                         onChange={onChange}
                     />
                 </FormControl>
-                <Text>Services</Text>
+                <Text>Select the services in which we can help</Text>
                 <Flex justify="center">
                     <CheckboxGroup
                         id="services"
@@ -120,9 +120,22 @@ const ContactForm = () => {
                         <Flex direction="column" m="1em">
                             <Checkbox
                                 size="8xl"
-                                value="Consulting"
+                                value="Analysis"
                                 mb=".5em"
-                                icon={<CustomSelect text="Consulting" />}
+                                icon={<CustomSelect text="Analysis" />}
+                            />
+                            <Checkbox
+                                size="8xl"
+                                value="Professionalism"
+                                icon={<CustomSelect text="Professionalism" />}
+                            />
+                        </Flex>
+                        <Flex direction="column" m="1em">
+                            <Checkbox
+                                size="8xl"
+                                value="Career"
+                                mb=".5em"
+                                icon={<CustomSelect text="Career" />}
                             />
                             <Checkbox
                                 size="8xl"
@@ -133,22 +146,9 @@ const ContactForm = () => {
                         <Flex direction="column" m="1em">
                             <Checkbox
                                 size="8xl"
-                                value="Analysis"
-                                mb=".5em"
-                                icon={<CustomSelect text="Analysis" />}
-                            />
-                            <Checkbox
-                                size="8xl"
                                 value="Grants"
-                                icon={<CustomSelect text="Grants" />}
-                            />
-                        </Flex>
-                        <Flex direction="column" m="1em">
-                            <Checkbox
-                                size="8xl"
                                 mb=".5em"
-                                value="Graduate School"
-                                icon={<CustomSelect text="University" />}
+                                icon={<CustomSelect text="Grants" />}
                             />
                             <Checkbox
                                 size="8xl"

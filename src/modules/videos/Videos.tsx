@@ -10,11 +10,9 @@ const Videos = () => {
             <Text mt="5" fontSize="4xl" fontWeight="700">
                 Hear From Our Students
             </Text>
-            <Text mt="5" textAlign="center" fontSize="lg">
-                Jennifer and Katie humble us with their words and do a great job
-                <br />
-                of showcasing the kind of experience we seek to build for
-                <br /> each of our students
+            <Text mt="3" textAlign="center" fontSize="lg">
+                Listen to Jennifer and Katie share their experiences in working
+                with GradCapFinder.
             </Text>
             <Video link="https://www.youtube.com/embed/Yky3veiHBMg" />
             <Video link="https://www.youtube.com/embed/YMiqb2VcTjo" />
