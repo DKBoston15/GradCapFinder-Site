@@ -1,13 +1,14 @@
 import React from "react";
-import { Flex, Text, Image } from "@chakra-ui/react";
+import { Flex, Text, Box } from "@chakra-ui/react";
 import { Link } from "react-scroll";
 import { openPopupWidget } from "react-calendly";
+import { StaticImage } from "gatsby-plugin-image";
 
 // Components
 import Button from "../../components/Button";
 
 // Images
-import heroImage from "./images/hero-image.jpg";
+// import heroImage from "./images/hero-image.jpg";
 
 const Header = () => {
     const openCalendly = () => {
@@ -36,21 +37,34 @@ const Header = () => {
                     <br /> <Text color="brand.blue">become a scholar</Text>
                 </Text>
                 <Flex
-                    w="100%"
+                    w={{
+                        base: "100%",
+                        lg: "90%",
+                        xl: "70%"
+                    }}
                     justify="space-between"
                     alignItems="center"
                     mt="2em"
                     direction={{ base: "column", md: "row" }}
                 >
                     <Button text="Free Consultation" calendly={true} />
-                    <Flex mt={{ base: "1.5em", md: "0" }}>
+                    <Flex
+                        mt={{ base: "1.5em", md: "0" }}
+                        ml={{ base: "0", md: "5" }}
+                    >
                         <Link to="info" smooth={true} duration={1000}>
                             <Button variant="secondary" text="Learn More" />
                         </Link>
                     </Flex>
                 </Flex>
             </Flex>
-            <Image boxSize="48%" src={heroImage} alt="Graduating Students" />
+            <Box boxSize="48%">
+                <StaticImage
+                    src="../../images/hero-image.jpg"
+                    alt="Graduating Students"
+                    placeholder="tracedSVG"
+                />
+            </Box>
         </Flex>
     );
 };

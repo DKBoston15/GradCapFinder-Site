@@ -38,13 +38,13 @@ const Info = () => {
             alignItems="center"
             bg="brand.bg"
             mt={"3.7em"}
-            pb={"5em"}
+            pb={"2.5em"}
         >
             <CollegeBanner images={images} />
             <Flex
                 mt={10}
                 w="90%"
-                direction={{ base: "column-reverse", md: "row" }}
+                direction={{ base: "column-reverse", lg: "row" }}
             >
                 <Map />
                 <Spacer />

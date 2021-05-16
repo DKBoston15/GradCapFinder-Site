@@ -6,8 +6,12 @@ import Feature from "./Feature";
 
 const Why = () => {
     return (
-        <Flex direction="column" w={{ base: "100%", md: "40%" }}>
-            <Text fontSize="4xl" fontWeight="700" mb="7">
+        <Flex direction="column" w={{ base: "100%", lg: "40%" }}>
+            <Text
+                fontSize={{ base: "3xl", sm: "4xl", md: "3xl", lg: "4xl" }}
+                fontWeight="700"
+                mb="7"
+            >
                 Why Work With GradCapFinder?
             </Text>
             <Feature
