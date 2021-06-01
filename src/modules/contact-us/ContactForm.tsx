@@ -56,6 +56,12 @@ const ContactForm = () => {
         }
 
         e.preventDefault()
+        console.log(
+            encode({
+                "form-name": "contact-us",
+                ...data
+            })
+        )
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -111,13 +117,14 @@ const ContactForm = () => {
             direction="column"
             w="100%"
         >
-            {/* @ts-ignore */}
             <form
                 name="contact-us"
+                method="POST"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={sendEmail}
             >
+                <input type="hidden" name="form-name" value="contact" />
                 <FormControl isRequired>
                     <FormLabel>Name</FormLabel>
                     <Input
