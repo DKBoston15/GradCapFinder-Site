@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import {
     Flex,
     Text,
@@ -8,19 +8,24 @@ import {
     ListItem,
     Spacer,
     ListIcon
-} from "@chakra-ui/react";
-import { InfoIcon } from "@chakra-ui/icons";
+} from "@chakra-ui/react"
+import { InfoIcon } from "@chakra-ui/icons"
 
 // Images
-import mit from "./images/mit.png";
-import usc from "./images/usc.png";
-import texasTech from "./images/texas-tech.png";
-import oregon from "./images/oregon.png";
-import dane from "./images/dane-portrait.png";
+// @ts-ignore
+import mit from "./images/mit.png"
+// @ts-ignore
+import usc from "./images/usc.png"
+// @ts-ignore
+import texasTech from "./images/texas-tech.png"
+// @ts-ignore
+import oregon from "./images/oregon.png"
+// @ts-ignore
+import dane from "./images/dane-portrait.png"
 
 //Components
-import CollegeBanner from "../../components/CollegeBanner";
-import Button from "../../components/Button";
+import CollegeBanner from "../../components/CollegeBanner"
+import Button from "../../components/Button"
 
 let images = [
     {
@@ -39,7 +44,7 @@ let images = [
         link: oregon,
         alt: "University of Oregon"
     }
-];
+]
 
 const About = () => {
     return (
@@ -155,7 +160,7 @@ const About = () => {
             </Flex>
             <CollegeBanner images={images} />
         </Flex>
-    );
-};
+    )
+}
 
-export default About;
+export default About
