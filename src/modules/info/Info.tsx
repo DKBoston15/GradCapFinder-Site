@@ -5,14 +5,11 @@ import { Flex, Spacer } from "@chakra-ui/react"
 import CollegeBanner from "../../components/CollegeBanner"
 import Map from "./Map"
 import Why from "./Why"
-// @ts-ignore
-import tamu from "./images/tamu.png"
-// @ts-ignore
-import chicago from "./images/chicago.png"
-// @ts-ignore
-import harvard from "./images/harvard.png"
-// @ts-ignore
-import vanderbilt from "./images/vanderbilt.png"
+
+import tamu from "../../images/info_images/tamu.png"
+import chicago from "../../images/info_images/chicago.png"
+import harvard from "../../images/info_images/harvard.png"
+import vanderbilt from "../../images/info_images/vanderbilt.png"
 
 const Info = () => {
     let images = [

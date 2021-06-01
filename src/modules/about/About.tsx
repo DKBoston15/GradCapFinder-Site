@@ -12,16 +12,11 @@ import {
 import { InfoIcon } from "@chakra-ui/icons"
 
 // Images
-// @ts-ignore
-import mit from "./images/mit.png"
-// @ts-ignore
-import usc from "./images/usc.png"
-// @ts-ignore
-import texasTech from "./images/texas-tech.png"
-// @ts-ignore
-import oregon from "./images/oregon.png"
-// @ts-ignore
-import dane from "./images/dane-portrait.png"
+import mit from "../../images/about_images/mit.png"
+import usc from "../../images/about_images/usc.png"
+import texasTech from "../../images/about_images/texas-tech.png"
+import oregon from "../../images/about_images/oregon.png"
+import dane from "../../images/about_images/dane-portrait.png"
 
 //Components
 import CollegeBanner from "../../components/CollegeBanner"
