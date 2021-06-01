@@ -79,37 +79,8 @@ const ContactForm = () => {
                     isClosable: true
                 })
             )
-            .catch((error) => alert(error))
+            .catch((error) => console.log(error))
     }
-
-    // let templateParams = {
-    //     name,
-    //     email,
-    //     description
-    // }
-    // emailjs
-    //     .send(
-    //         "service_egc5313",
-    //         "template_zses0cj",
-    //         templateParams,
-    //         "user_MZDgArYLRizB7rNHlh6Bn"
-    //     )
-    //     .then(
-    //         function (response) {
-    //             console.log("SUCCESS!", response.status, response.text)
-    //             formReset()
-    //             toast({
-    //                 title: "Form Submitted.",
-    //                 description: "We will respond as soon as possible!",
-    //                 status: "success",
-    //                 duration: 4000,
-    //                 isClosable: true
-    //             })
-    //         },
-    //         function (error) {
-    //             console.log("FAILED...", error)
-    //         }
-    //     )
     return (
         <Container
             justify="center"
