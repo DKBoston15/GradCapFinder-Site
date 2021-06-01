@@ -1,15 +1,18 @@
-import React from "react";
-import { Flex, Spacer } from "@chakra-ui/react";
+import React from "react"
+import { Flex, Spacer } from "@chakra-ui/react"
 
 // Components
-import CollegeBanner from "../../components/CollegeBanner";
-import Map from "./Map";
-import Why from "./Why";
-
-import tamu from "./images/tamu.png";
-import chicago from "./images/chicago.png";
-import harvard from "./images/harvard.png";
-import vanderbilt from "./images/vanderbilt.png";
+import CollegeBanner from "../../components/CollegeBanner"
+import Map from "./Map"
+import Why from "./Why"
+// @ts-ignore
+import tamu from "./images/tamu.png"
+// @ts-ignore
+import chicago from "./images/chicago.png"
+// @ts-ignore
+import harvard from "./images/harvard.png"
+// @ts-ignore
+import vanderbilt from "./images/vanderbilt.png"
 
 const Info = () => {
     let images = [
@@ -29,7 +32,7 @@ const Info = () => {
             link: vanderbilt,
             alt: "Vanderbilt University"
         }
-    ];
+    ]
     return (
         <Flex
             id="info"
@@ -51,7 +54,7 @@ const Info = () => {
                 <Why />
             </Flex>
         </Flex>
-    );
-};
+    )
+}
 
-export default Info;
+export default Info
