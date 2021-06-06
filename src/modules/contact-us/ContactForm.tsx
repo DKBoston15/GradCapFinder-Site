@@ -99,6 +99,7 @@ const ContactForm = () => {
                 <FormControl isRequired>
                     <FormLabel>Name</FormLabel>
                     <Input
+                        name="name"
                         id="name"
                         bg="white"
                         value={name}
@@ -108,6 +109,7 @@ const ContactForm = () => {
                 <FormControl isRequired>
                     <FormLabel>Email address</FormLabel>
                     <Input
+                        name="email"
                         bg="white"
                         type="email"
                         id="email"
@@ -118,6 +120,7 @@ const ContactForm = () => {
                 <FormControl isRequired>
                     <FormLabel>Description</FormLabel>
                     <Textarea
+                        name="description"
                         bg="white"
                         id="description"
                         value={description}
