@@ -44,6 +44,7 @@ const FAQ = () => {
                     </Box>
                 </Flex>
             </Flex>
+
             <Flex
                 w={{ base: "85%", lg: "65%" }}
                 justify="center"
