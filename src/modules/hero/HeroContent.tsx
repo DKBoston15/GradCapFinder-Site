@@ -1,11 +1,11 @@
-import React from "react";
-import { Flex, Text, Box } from "@chakra-ui/react";
-import { Link } from "react-scroll";
-import { openPopupWidget } from "react-calendly";
-import { StaticImage } from "gatsby-plugin-image";
+import React from "react"
+import { Flex, Text, Box } from "@chakra-ui/react"
+import { Link } from "react-scroll"
+import { openPopupWidget } from "react-calendly"
+import { StaticImage } from "gatsby-plugin-image"
 
 // Components
-import Button from "../../components/Button";
+import Button from "../../components/Button"
 
 // Images
 // import heroImage from "./images/hero-image.jpg";
@@ -14,9 +14,9 @@ const Header = () => {
     const openCalendly = () => {
         let options = {
             url: "https://calendly.com/gradcapfinder"
-        };
-        openPopupWidget(options);
-    };
+        }
+        openPopupWidget(options)
+    }
 
     return (
         <Flex
@@ -66,7 +66,7 @@ const Header = () => {
                 />
             </Box>
         </Flex>
-    );
-};
+    )
+}
 
-export default Header;
+export default Header
