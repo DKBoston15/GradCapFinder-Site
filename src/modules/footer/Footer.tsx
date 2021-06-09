@@ -1,8 +1,8 @@
-import React from "react";
-import { Flex, Text } from "@chakra-ui/react";
+import React from "react"
+import { Flex, Text } from "@chakra-ui/react"
 
 // Components
-import Button from "../../components/Button";
+import Button from "../../components/Button"
 
 const Footer = () => {
     return (
@@ -22,9 +22,13 @@ const Footer = () => {
             >
                 GradCapFinder
             </Text>
-            <Button text="Free Consultation" calendly={true} />
+            <Button
+                text="Free Consultation"
+                calendly={true}
+                meetingType="freeConsultation"
+            />
         </Flex>
-    );
-};
+    )
+}
 
-export default Footer;
+export default Footer

@@ -28,9 +28,14 @@ const Header = () => {
             </Text>
             <Flex align="center">
                 <Box display={{ base: "none", md: "flex" }}>
-                    <Link to="/blog">
+                    {/* <Link to="/blog">
                         <Text fontSize="lg" pr={5} fontWeight="600">
                             Blog
+                        </Text>
+                    </Link> */}
+                    <Link to="/current-students">
+                        <Text fontSize="lg" pr={5} fontWeight="600">
+                            Current Students
                         </Text>
                     </Link>
                     <Link to="/faq">
@@ -48,11 +53,19 @@ const Header = () => {
                             variant="outline"
                         />
                         <MenuList>
-                            <MenuItem
+                            {/* <MenuItem
                                 onClick={() => navigateToPage("blog")}
                                 icon={<ChatIcon />}
                             >
                                 Blog
+                            </MenuItem> */}
+                            <MenuItem
+                                onClick={() =>
+                                    navigateToPage("current-students")
+                                }
+                                icon={<InfoIcon />}
+                            >
+                                Current Students
                             </MenuItem>
                             <MenuItem
                                 onClick={() => navigateToPage("faq")}
