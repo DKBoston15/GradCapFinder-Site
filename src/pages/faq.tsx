@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { openPopupWidget } from "react-calendly"
+import { Helmet } from "react-helmet"
 import { hotjar } from "react-hotjar"
 import {
     Accordion,
@@ -26,6 +27,10 @@ const FAQ = () => {
 
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>FAQ</title>
+            </Helmet>
             <Flex direction="column" align="center" height="100%" mt={10}>
                 <Flex alignItems="center" justify="space-between" width="90%">
                     <Text

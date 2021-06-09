@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 import { hotjar } from "react-hotjar"
 
-import Button from "../components/Button"
+import Button from "../src/components/Button"
 hotjar.initialize(2444366, 6)
 function BlogPage({ data }) {
     const post = data.allMdx.nodes

@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { Box, Flex, Text } from "@chakra-ui/react"
+import { Helmet } from "react-helmet"
 import { hotjar } from "react-hotjar"
 
 import Button from "../components/Button"
@@ -17,6 +18,10 @@ const CurrentStudents = () => {
 
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Current Students</title>
+            </Helmet>
             <Flex direction="column" align="center" h="100vh">
                 <Flex
                     alignItems="center"
