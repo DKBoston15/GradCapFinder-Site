@@ -1,9 +1,12 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { Box, Flex, Text } from "@chakra-ui/react"
+import { Helmet } from "react-helmet"
+import { hotjar } from "react-hotjar"
 
 import Button from "../components/Button"
 import Footer from "../modules/footer/Footer"
+hotjar.initialize(2444366, 6)
 
 const CurrentStudents = () => {
     const openPaypal = () => {
@@ -15,7 +18,11 @@ const CurrentStudents = () => {
 
     return (
         <>
-            <Flex direction="column" align="center" h="82.5vh">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Current Students</title>
+            </Helmet>
+            <Flex direction="column" align="center" h="100vh">
                 <Flex
                     alignItems="center"
                     justify="space-between"
@@ -70,9 +77,7 @@ const CurrentStudents = () => {
                     </Flex>
                 </Flex>
             </Flex>
-            <Box postion="fixed" left={0} bottom={10}>
-                <Footer />
-            </Box>
+            <Footer />
         </>
     )
 }
