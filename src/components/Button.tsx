@@ -1,28 +1,36 @@
-import React, { useMemo, ReactNode } from "react";
-import { Button, ButtonProps } from "@chakra-ui/react";
-import { openPopupWidget } from "react-calendly";
+import React, { useMemo, ReactNode } from "react"
+import { Button, ButtonProps } from "@chakra-ui/react"
+import { openPopupWidget } from "react-calendly"
 
-type TVariant = "primary" | "secondary";
+type TVariant = "primary" | "secondary"
 interface IButtonProps extends ButtonProps {
-    text: ReactNode;
-    variant?: TVariant;
-    width?: string;
-    calendly?: boolean;
+    text: ReactNode
+    variant?: TVariant
+    width?: string
+    calendly?: boolean
+    meetingType?: string
 }
-
-const openCalendly = () => {
-    let options = {
-        url: "https://calendly.com/gradcapfinder/free-consultation"
-    };
-    openPopupWidget(options);
-};
 
 const PrimaryButton = ({
     text,
     variant = "primary",
     width,
-    calendly
+    calendly,
+    meetingType
 }: IButtonProps) => {
+    const openCalendly = () => {
+        let meetingUrl = ""
+        if (meetingType === "generalMeeting") {
+            meetingUrl = "https://calendly.com/gradcapfinder/general-meeting"
+        }
+        if (meetingType === "freeConsultation") {
+            meetingUrl = "https://calendly.com/gradcapfinder/free-consultation"
+        }
+        let options = {
+            url: meetingUrl
+        }
+        openPopupWidget(options)
+    }
     const buttonVariantMapper: Record<TVariant, JSX.Element> = useMemo(
         () => ({
             primary: (
@@ -65,9 +73,9 @@ const PrimaryButton = ({
             )
         }),
         []
-    );
+    )
 
-    return buttonVariantMapper[variant];
-};
+    return buttonVariantMapper[variant]
+}
 
-export default PrimaryButton;
+export default PrimaryButton

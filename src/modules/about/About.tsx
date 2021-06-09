@@ -58,7 +58,11 @@ const About = () => {
                     flex="1"
                 >
                     <Image src={dane} alt="Dr. Dane Bozeman" w="18em" mb={10} />
-                    <Button text="Free Consultation" calendly={true} />
+                    <Button
+                        text="Free Consultation"
+                        calendly={true}
+                        meetingType="freeConsultation"
+                    />
                     <List mt={10} decoration="none" spacing={2}>
                         <ListItem fontWeight="900">
                             <ListIcon

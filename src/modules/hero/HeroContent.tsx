@@ -1,7 +1,6 @@
 import React from "react"
 import { Flex, Text, Box } from "@chakra-ui/react"
 import { Link } from "react-scroll"
-import { openPopupWidget } from "react-calendly"
 import { StaticImage } from "gatsby-plugin-image"
 
 // Components
@@ -11,13 +10,6 @@ import Button from "../../components/Button"
 // import heroImage from "./images/hero-image.jpg";
 
 const Header = () => {
-    const openCalendly = () => {
-        let options = {
-            url: "https://calendly.com/gradcapfinder"
-        }
-        openPopupWidget(options)
-    }
-
     return (
         <Flex
             alignItems="center"
@@ -47,7 +39,11 @@ const Header = () => {
                     mt="2em"
                     direction={{ base: "column", md: "row" }}
                 >
-                    <Button text="Free Consultation" calendly={true} />
+                    <Button
+                        text="Free Consultation"
+                        calendly={true}
+                        meetingType="freeConsultation"
+                    />
                     <Flex
                         mt={{ base: "1.5em", md: "0" }}
                         ml={{ base: "0", md: "5" }}
