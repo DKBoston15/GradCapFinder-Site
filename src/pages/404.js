@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { hotjar } from "react-hotjar"
 
 import fourOFourImage from "../images/404.jpg"
@@ -11,6 +10,7 @@ const NotFoundPage = () => {
         <main>
             <img
                 src={fourOFourImage}
+                alt="404"
                 style={{ height: "100vh", width: "100vw" }}
             />
         </main>
