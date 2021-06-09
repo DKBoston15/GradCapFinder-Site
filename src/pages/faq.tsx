@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { openPopupWidget } from "react-calendly"
+import { hotjar } from "react-hotjar"
 import {
     Accordion,
     AccordionItem,
@@ -13,7 +14,7 @@ import {
 } from "@chakra-ui/react"
 
 import Button from "../components/Button"
-
+hotjar.initialize(2444366, 6)
 const FAQ = () => {
     const openCalendly = () => {
         let options = {

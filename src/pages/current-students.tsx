@@ -1,9 +1,11 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { Box, Flex, Text } from "@chakra-ui/react"
+import { hotjar } from "react-hotjar"
 
 import Button from "../components/Button"
 import Footer from "../modules/footer/Footer"
+hotjar.initialize(2444366, 6)
 
 const CurrentStudents = () => {
     const openPaypal = () => {
