@@ -16,20 +16,27 @@ hotjar.initialize(2444366, 6)
 
 function IndexPage() {
     return (
-        <Flex flexDirection="column" justify="space-between">
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>GradCapFinder</title>
-                <link rel="canonical" href="http://gradcapfinder.com" />
-            </Helmet>
-            <Hero />
-            <Info />
-            <Book />
-            <About />
-            <Videos />
-            <ContactUs />
+        <>
+            <Flex
+                flexDirection="column"
+                justify="space-between"
+                pb={160}
+                height="100%"
+            >
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>GradCapFinder</title>
+                    <link rel="canonical" href="http://gradcapfinder.com" />
+                </Helmet>
+                <Hero />
+                <Info />
+                <Book />
+                <About />
+                <Videos />
+                <ContactUs />
+            </Flex>
             <Footer />
-        </Flex>
+        </>
     )
 }
 

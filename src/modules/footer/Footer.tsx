@@ -12,6 +12,10 @@ const Footer = () => {
             justify="space-between"
             p="2em 4em"
             alignItems="center"
+            bottom={0}
+            left={0}
+            width="100%"
+            position="absolute"
             direction={{ base: "column", sm: "row" }}
         >
             <Text

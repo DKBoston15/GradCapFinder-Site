@@ -17,7 +17,7 @@ const CurrentStudents = () => {
 
     return (
         <>
-            <Flex direction="column" align="center" h="82.5vh">
+            <Flex direction="column" align="center" h="100vh">
                 <Flex
                     alignItems="center"
                     justify="space-between"
@@ -72,9 +72,7 @@ const CurrentStudents = () => {
                     </Flex>
                 </Flex>
             </Flex>
-            <Box postion="fixed" left={0} bottom={10}>
-                <Footer />
-            </Box>
+            <Footer />
         </>
     )
 }
