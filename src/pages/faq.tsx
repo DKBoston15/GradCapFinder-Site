@@ -2,7 +2,6 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { openPopupWidget } from "react-calendly"
 import { Helmet } from "react-helmet"
-import { hotjar } from "react-hotjar"
 import {
     Accordion,
     AccordionItem,
@@ -16,7 +15,6 @@ import {
 import Footer from "../modules/footer/Footer"
 
 import Button from "../components/Button"
-hotjar.initialize(2444366, 6)
 const FAQ = () => {
     const openCalendly = () => {
         let options = {

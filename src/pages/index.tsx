@@ -1,7 +1,6 @@
 import React from "react"
 import { Flex } from "@chakra-ui/react"
 import { Helmet } from "react-helmet"
-import { hotjar } from "react-hotjar"
 
 // Components
 import Hero from "../modules/hero/Hero"
@@ -11,8 +10,6 @@ import About from "../modules/about/About"
 import Videos from "../modules/videos/Videos"
 import ContactUs from "../modules/contact-us/ContactUs"
 import Footer from "../modules/footer/Footer"
-
-hotjar.initialize(2444366, 6)
 
 function IndexPage() {
     return (
