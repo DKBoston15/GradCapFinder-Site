@@ -1,8 +1,8 @@
-import React from "react";
-import { Flex, Text } from "@chakra-ui/react";
+import React from "react"
+import { Flex, Text } from "@chakra-ui/react"
 
 // Components
-import Feature from "./Feature";
+import Feature from "./Feature"
 
 const Why = () => {
     return (
@@ -16,18 +16,18 @@ const Why = () => {
             </Text>
             <Feature
                 title="Community"
-                description="We find successful PhD’s create community. We help graduate students identify the members of their community. The world map on this page represents our community of PhDs."
+                description="We find that successful PhD’s create community. We help graduate students identify the members of their community. The world map on this page represents our community of PhDs."
             />
             <Feature
                 title="Assessment"
-                description="We recognize successful PhD's journey to assess themselves and their work. We provide students with ways to constructively assess themselves and their work. We know PhDs all over the world who continually assess themselves and their work."
+                description="We recognize that successful PhD's journey to assess themselves and their work. We provide students with ways to constructively assess themselves and their work. We know PhDs all over the world who continually assess themselves and their work."
             />
             <Feature
                 title="Knowledge"
                 description="We value successful PhD’s efforts to produce knowledge for the world to consume. We help PhDs turn their efforts into knowledge. Join our global community of knowledge makers."
             />
         </Flex>
-    );
-};
+    )
+}
 
-export default Why;
+export default Why
