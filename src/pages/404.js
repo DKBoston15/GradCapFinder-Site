@@ -1,9 +1,7 @@
 import * as React from "react"
-import { hotjar } from "react-hotjar"
 
 import fourOFourImage from "../images/404.jpg"
 
-hotjar.initialize(2444366, 6)
 // markup
 const NotFoundPage = () => {
     return (
