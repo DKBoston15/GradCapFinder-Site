@@ -16,15 +16,21 @@ const Why = () => {
             </Text>
             <Feature
                 title="Community"
-                description="We find that successful PhD’s create community. We help graduate students identify the members of their community. The world map on this page represents our community of PhDs."
+                description1="We have seen that the most successful PhD students create a strong community to leverage their support and guidance in the PhD process."
+                description2="At GCF, we help students identify the existing members of their community and find new mentors."
+                description3="The world map displays where our students are located and the community of PhDs we have built at GCF."
             />
             <Feature
                 title="Assessment"
-                description="We recognize that successful PhD's journey to assess themselves and their work. We provide students with ways to constructively assess themselves and their work. We know PhDs all over the world who continually assess themselves and their work."
+                description1="We recognize that successful PhD candidates continuously assess themselves and their work."
+                description2="We aim to provide students constructive opportunities to evaluate themselves."
+                description3="This process pushes students to strive for constant improvement and learning. GCF has supported students in their growth journey all over the world."
             />
             <Feature
                 title="Knowledge"
-                description="We value successful PhD’s efforts to produce knowledge for the world to consume. We help PhDs turn their efforts into knowledge. Join our global community of knowledge makers."
+                description1="GCF supports the process of producing knowledge for the world to consume."
+                description2="Through our work with our PhD community we help students directly translate their efforts into knowledge."
+                description3="Join our global community of knowledge creators so we can support your effort to make a difference."
             />
         </Flex>
     )

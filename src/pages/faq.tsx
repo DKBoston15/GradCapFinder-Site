@@ -68,7 +68,8 @@ const FAQ = () => {
                             <AccordionButton>
                                 <Box flex="1" textAlign="left">
                                     <Text fontWeight="700">
-                                        How many PhD students become ABD?
+                                        How many PhD students become ABD (all
+                                        but dissertation)?
                                     </Text>
                                 </Box>
                                 <AccordionIcon />
@@ -79,7 +80,7 @@ const FAQ = () => {
                                     align="center"
                                     w="95%"
                                     direction={{ base: "column", md: "row" }}
-                                    h={{ base: "7em", md: "5em" }}
+                                    h={{ md: "5em" }}
                                 >
                                     Almost one in six PhD students become ABD.
                                     <a
@@ -87,10 +88,31 @@ const FAQ = () => {
                                         href="https://slate.com/human-interest/2014/08/abds-all-but-dissertation-ph-d-
 candidates-who-cant-quite-finish.html"
                                     >
-                                        <Button
-                                            variant="secondary"
-                                            text="Learn More"
-                                        />
+                                        <Box
+                                            display={{
+                                                base: "none",
+                                                md: "flex"
+                                            }}
+                                        >
+                                            <Button
+                                                variant="secondary"
+                                                text="Learn More"
+                                            />
+                                        </Box>
+                                        <Box
+                                            display={{
+                                                base: "flex",
+                                                md: "none"
+                                            }}
+                                        >
+                                            <Text
+                                                color="#209EBC"
+                                                fontWeight="700"
+                                                mt={3}
+                                            >
+                                                Learn More
+                                            </Text>
+                                        </Box>
                                     </a>
                                 </Flex>
                             </AccordionPanel>
@@ -114,22 +136,42 @@ candidates-who-cant-quite-finish.html"
                                     direction={{ base: "column", md: "row" }}
                                     h={{ base: "7em", md: "5em" }}
                                 >
-                                    Fewer than one in three PhD students finish
-                                    the PhD
+                                    Fewer than three-quarters of PhD students
+                                    finish their PhD
                                     <a
                                         target="_blank"
                                         href="https://www.aaas.org/phd-completion-project"
                                     >
-                                        <Button
-                                            variant="secondary"
-                                            text="Learn More"
-                                        />
+                                        <Box
+                                            display={{
+                                                base: "none",
+                                                md: "flex"
+                                            }}
+                                        >
+                                            <Button
+                                                variant="secondary"
+                                                text="Learn More"
+                                            />
+                                        </Box>
+                                        <Box
+                                            display={{
+                                                base: "flex",
+                                                md: "none"
+                                            }}
+                                        >
+                                            <Text
+                                                color="#209EBC"
+                                                fontWeight="700"
+                                            >
+                                                Learn More
+                                            </Text>
+                                        </Box>
                                     </a>
                                 </Flex>
                             </AccordionPanel>
                         </AccordionItem>
 
-                        <AccordionItem>
+                        <AccordionItem pb={{ base: "5em", sm: "0" }}>
                             <AccordionButton>
                                 <Box flex="1" textAlign="left">
                                     <Text fontWeight="700">
@@ -138,7 +180,7 @@ candidates-who-cant-quite-finish.html"
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
-                            <AccordionPanel pb={4}>
+                            <AccordionPanel pb={8}>
                                 <Flex
                                     justify="space-between"
                                     align="center"
@@ -146,7 +188,7 @@ candidates-who-cant-quite-finish.html"
                                     direction={{ base: "column", md: "row" }}
                                     h={{ base: "7em", md: "5em" }}
                                 >
-                                    <Text mr={25}>
+                                    <Text>
                                         Just what you think a coach would be. We
                                         get to know you, push you when you want
                                         to quit, and offer support when you
@@ -156,10 +198,30 @@ candidates-who-cant-quite-finish.html"
                                         target="_blank"
                                         href="https://phdtogo.wordpress.com/2012/02/15/have-you-ever-considered-a-thesis-"
                                     >
-                                        <Button
-                                            variant="secondary"
-                                            text="Learn More"
-                                        />
+                                        <Box
+                                            display={{
+                                                base: "none",
+                                                md: "flex"
+                                            }}
+                                        >
+                                            <Button
+                                                variant="secondary"
+                                                text="Learn More"
+                                            />
+                                        </Box>
+                                        <Box
+                                            display={{
+                                                base: "flex",
+                                                md: "none"
+                                            }}
+                                        >
+                                            <Text
+                                                color="#209EBC"
+                                                fontWeight="700"
+                                            >
+                                                Learn More
+                                            </Text>
+                                        </Box>
                                     </a>
                                 </Flex>
                             </AccordionPanel>
@@ -169,14 +231,15 @@ candidates-who-cant-quite-finish.html"
                             <AccordionButton>
                                 <Box flex="1" textAlign="left">
                                     <Text fontWeight="700">
-                                        How many students use a PhD coach?
+                                        How many students use GradCapFinder for
+                                        their PhD coaching?
                                     </Text>
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
                             <AccordionPanel pb={4}>
-                                No one really knows, but we do know that more
-                                and more students reach out every year.
+                                106 individuals have worked with GradCapFinder
+                                in the last decade.
                             </AccordionPanel>
                         </AccordionItem>
 
@@ -208,11 +271,10 @@ candidates-who-cant-quite-finish.html"
                                 <AccordionIcon />
                             </AccordionButton>
                             <AccordionPanel pb={4}>
-                                We cannot answer that question for you, but 106
-                                individuals have worked with GradCapFinder in
-                                the last decade. Many of these PhDs now refer us
-                                to their colleagues, family, and their own
-                                students.
+                                We can not answer that question for you, however
+                                many of these PhDs now refer us to their
+                                colleagues, family, and students. Reach out
+                                today to see how we can help you.
                             </AccordionPanel>
                         </AccordionItem>
                     </Accordion>

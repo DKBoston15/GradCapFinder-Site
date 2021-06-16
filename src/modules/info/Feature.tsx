@@ -1,8 +1,8 @@
-import React from "react";
-import { Flex, Text, Box } from "@chakra-ui/react";
-import { CheckCircleIcon } from "@chakra-ui/icons";
+import React from "react"
+import { Flex, Text, Box } from "@chakra-ui/react"
+import { CheckCircleIcon } from "@chakra-ui/icons"
 
-const Feature = ({ title, description }) => {
+const Feature = ({ title, description1, description2, description3 }) => {
     return (
         <Flex direction="column" mb="5">
             <Flex alignItems="center">
@@ -12,10 +12,10 @@ const Feature = ({ title, description }) => {
                 </Text>
             </Flex>
             <Text fontWeight="500" mt={3}>
-                {description}
+                {description1} <b>{description2}</b> {description3}
             </Text>
         </Flex>
-    );
-};
+    )
+}
 
-export default Feature;
+export default Feature

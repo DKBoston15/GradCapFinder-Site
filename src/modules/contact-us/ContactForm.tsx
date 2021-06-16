@@ -107,7 +107,7 @@ const ContactForm = () => {
                     />
                 </FormControl>
                 <FormControl isRequired>
-                    <FormLabel>Email address</FormLabel>
+                    <FormLabel mt={3}>Email address</FormLabel>
                     <Input
                         name="email"
                         bg="white"
@@ -118,11 +118,11 @@ const ContactForm = () => {
                     />
                 </FormControl>
                 <FormControl isRequired>
-                    <FormLabel>Description</FormLabel>
+                    <FormLabel mt={3}>Message</FormLabel>
                     <Textarea
-                        name="description"
+                        name="message"
                         bg="white"
-                        id="description"
+                        id="message"
                         value={description}
                         onChange={onChange}
                     />
