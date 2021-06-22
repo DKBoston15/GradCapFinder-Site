@@ -51547,7 +51547,7 @@ var plugins = [{
     "remarkPlugins": [],
     "rehypePlugins": [],
     "mediaTypes": ["text/markdown", "text/x-markdown"],
-    "root": "/Users/personal/Desktop/gradcapfinder-site/GradCapFinder-Site"
+    "root": "/Users/personal/Documents/GradCapFinder-Revamp/GradCapFinder-Site"
   }
 }, {
   name: 'gatsby-plugin-google-fonts',
@@ -97872,24 +97872,24 @@ module.exports = warning;
 /***/ }),
 
 /***/ "react-dom/server":
-/*!*****************************************************************************************************************!*\
-  !*** external "/Users/personal/Desktop/gradcapfinder-site/GradCapFinder-Site/node_modules/react-dom/server.js" ***!
-  \*****************************************************************************************************************/
+/*!*********************************************************************************************************************!*\
+  !*** external "/Users/personal/Documents/GradCapFinder-Revamp/GradCapFinder-Site/node_modules/react-dom/server.js" ***!
+  \*********************************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/personal/Desktop/gradcapfinder-site/GradCapFinder-Site/node_modules/react-dom/server.js");;
+module.exports = require("/Users/personal/Documents/GradCapFinder-Revamp/GradCapFinder-Site/node_modules/react-dom/server.js");;
 
 /***/ }),
 
 /***/ "react":
-/*!************************************************************************************************************!*\
-  !*** external "/Users/personal/Desktop/gradcapfinder-site/GradCapFinder-Site/node_modules/react/index.js" ***!
-  \************************************************************************************************************/
+/*!****************************************************************************************************************!*\
+  !*** external "/Users/personal/Documents/GradCapFinder-Revamp/GradCapFinder-Site/node_modules/react/index.js" ***!
+  \****************************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/personal/Desktop/gradcapfinder-site/GradCapFinder-Site/node_modules/react/index.js");;
+module.exports = require("/Users/personal/Documents/GradCapFinder-Revamp/GradCapFinder-Site/node_modules/react/index.js");;
 
 /***/ }),
 
