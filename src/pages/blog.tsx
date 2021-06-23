@@ -1,11 +1,17 @@
 import React from "react"
 import { Flex, Text, Box, SimpleGrid } from "@chakra-ui/react"
 import { Helmet } from "react-helmet"
-import { Link, graphql } from "gatsby"
+import { Link, graphql, navigate } from "gatsby"
 import Button from "../components/Button"
+import BlogFooter from '../modules/footer/BlogFooter'
+
 function BlogPage({ data }) {
     const post = data.allMdx.nodes
+    const toBlog = (slug) => {
+        navigate(slug)
+    }
     return (
+        <>
         <Flex justify="center" direction="column" align="center">
             <Helmet>
                 <meta charSet="utf-8" />
@@ -38,29 +44,52 @@ function BlogPage({ data }) {
                 </Flex>
             </Flex>
             <Flex direction="column" w="80%" mt="5em">
+            <Box display="flex" alignItems="center">
                 <Text fontSize="5xl" fontWeight="700">
                     The Graduate Feed
                 </Text>
-                <Flex bg="tomato" height="480px" mt={10} bgGradient="url('https://picsum.photos/1500/480')"></Flex>
-                <SimpleGrid columns={{ md: 2, lg: 3 }} spacing="40px" mt="5em">
+                <Box ml={5}><Button text="Subscribe"/></Box>
+                </Box>
+                <Flex>
+                <Flex bg="tomato" height="380px" width="50%" mt={10} bgGradient="url('https://picsum.photos/1500/480')" flexDirection="column"/>
+                    <Box width="50%" ml={10} display="flex" flexDirection="column" justifyContent="space-between" >
+                        <Box>
+                        <Text mt={12}>02/21/2021</Text>
+                        <Text fontSize="4xl" fontWeight="700">Graduate education, Five F-Words, and the hindsight of an early-career researcher</Text>
+                        <Text mt={1}>This is a test description!</Text>
+                        </Box>
+                        <Box display="flex"><Text borderBottom="2px solid #209EBC" mt={1}>Cashion Cain</Text></Box>
+                    </Box>
+                    
+                </Flex>
+                <SimpleGrid columns={{ md: 2, lg: 3 }} spacing="40px" mt="5em" height="100%">
                     {post.map((post: any) => {
                         if (post.frontmatter) {
                             const title =
                                 post.frontmatter.title || post.fields.slug
                             return (
-                                <Link to={post.slug} key={post.slug}>
-                                    <Box bg="tomato" height="320px" bgGradient={`url(${post.frontmatter.thumbnail})`}>
-                                        <h1>{title}</h1>
-                                        <p>{post.frontmatter.date}</p>
-                                        <p>{post.frontmatter.description}</p>
-                                    </Box>
-                                </Link>
+                                <Box>
+                                    <Box height="220px" cursor="pointer" bgGradient={`url(${post.frontmatter.thumbnail})`} onClick={() => {toBlog(post.slug)}}/>
+                                    <Box display="flex" flexDirection="column" justifyContent="space-between" height="12em">
+                                        <Box>
+                                            <Link to={post.slug} key={post.slug}>
+                                                <Text mt={4} color="#595959">02/21/2021</Text>
+                                                <Text fontSize="18px" fontWeight="700">{title}</Text>
+                                                <Text mt={1}>{post.frontmatter.description}</Text>
+                                            </Link>
+                                        </Box>
+                                        <Box display="flex"><Text borderBottom="2px solid #209EBC">{post.frontmatter.author}</Text></Box>
+                                    </Box>  
+                                </Box>
+                                
                             )
                         }
                     })}
                 </SimpleGrid>
             </Flex>
         </Flex>
+        <Box pt={250}><BlogFooter/></Box>
+        </>
     )
 }
 
@@ -82,6 +111,7 @@ export const pageQuery = graphql`
                     title
                     description
                     thumbnail
+                    author
                 }
                 slug
             }

@@ -9,6 +9,7 @@ interface IButtonProps extends ButtonProps {
     width?: string
     calendly?: boolean
     meetingType?: string
+    ml?: number
 }
 
 const PrimaryButton = ({
@@ -16,7 +17,7 @@ const PrimaryButton = ({
     variant = "primary",
     width,
     calendly,
-    meetingType
+    meetingType,
 }: IButtonProps) => {
     const openCalendly = () => {
         let meetingUrl = ""
