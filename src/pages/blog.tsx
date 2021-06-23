@@ -2,7 +2,7 @@ import React from "react"
 import { Flex, Text, Box, SimpleGrid } from "@chakra-ui/react"
 import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
-import Button from "../src/components/Button"
+import Button from "../components/Button"
 function BlogPage({ data }) {
     const post = data.allMdx.nodes
     return (
@@ -41,7 +41,7 @@ function BlogPage({ data }) {
                 <Text fontSize="5xl" fontWeight="700">
                     The Graduate Feed
                 </Text>
-                <Flex bg="tomato" height="480px" mt={10}></Flex>
+                <Flex bg="tomato" height="480px" mt={10} bgGradient="url('https://picsum.photos/1500/480')"></Flex>
                 <SimpleGrid columns={{ md: 2, lg: 3 }} spacing="40px" mt="5em">
                     {post.map((post: any) => {
                         if (post.frontmatter) {
@@ -49,7 +49,7 @@ function BlogPage({ data }) {
                                 post.frontmatter.title || post.fields.slug
                             return (
                                 <Link to={post.slug} key={post.slug}>
-                                    <Box bg="tomato" height="320px">
+                                    <Box bg="tomato" height="320px" bgGradient={`url(${post.frontmatter.thumbnail})`}>
                                         <h1>{title}</h1>
                                         <p>{post.frontmatter.date}</p>
                                         <p>{post.frontmatter.description}</p>
@@ -81,6 +81,7 @@ export const pageQuery = graphql`
                     date(formatString: "Do MMMM YYYY")
                     title
                     description
+                    thumbnail
                 }
                 slug
             }
