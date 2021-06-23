@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { Box, Flex, Text } from "@chakra-ui/react"
 import { Helmet } from "react-helmet"
+import FullStory from 'react-fullstory';
 
 import Button from "../components/Button"
 import Footer from "../modules/footer/Footer"

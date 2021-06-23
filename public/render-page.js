@@ -51497,6 +51497,13 @@ function useScrollRestoration(identifier) {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var plugins = [{
+  name: 'gatsby-plugin-fullstory',
+  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-fullstory/gatsby-ssr */ "./node_modules/gatsby-plugin-fullstory/gatsby-ssr.js"),
+  options: {
+    "plugins": [],
+    "fs_org": "13J61T"
+  }
+}, {
   name: 'gatsby-plugin-image',
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-image/gatsby-ssr */ "./node_modules/gatsby-plugin-image/gatsby-ssr.js"),
   options: {
@@ -53039,6 +53046,34 @@ const WrapRootElement = ({
     portalZIndex: portalZIndex
   }, element);
 };
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-fullstory/gatsby-ssr.js":
+/*!************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-fullstory/gatsby-ssr.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+exports.__esModule = true;
+exports.onRenderBody = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var onRenderBody = function onRenderBody(_ref, pluginOptions) {
+  var setHeadComponents = _ref.setHeadComponents;
+
+  if (false) {}
+
+  return null;
+};
+
+exports.onRenderBody = onRenderBody;
 
 /***/ }),
 

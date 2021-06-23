@@ -10,6 +10,12 @@ module.exports = {
         siteUrl: "https://nifty-haibt-162826.netlify.app/"
     },
     plugins: [
+        {
+            resolve: `gatsby-plugin-fullstory`,
+            options: {
+              fs_org: '13J61T',
+            },
+          },
         "gatsby-plugin-emotion",
         "gatsby-plugin-image",
         "gatsby-plugin-react-helmet",

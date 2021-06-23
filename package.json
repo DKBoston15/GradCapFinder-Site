@@ -27,6 +27,7 @@
         "framer-motion": "^4.1.12",
         "gatsby": "^3.4.1",
         "gatsby-plugin-emotion": "^6.4.0",
+        "gatsby-plugin-fullstory": "^3.8.0",
         "gatsby-plugin-google-fonts": "^1.0.1",
         "gatsby-plugin-image": "^1.5.0",
         "gatsby-plugin-manifest": "^3.4.0",
@@ -42,6 +43,7 @@
         "react": "^17.0.1",
         "react-calendly": "^2.0.0",
         "react-dom": "^17.0.1",
+        "react-fullstory": "^1.4.0",
         "react-helmet": "^6.1.0",
         "react-scroll": "^1.8.2"
     },

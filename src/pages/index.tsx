@@ -11,6 +11,7 @@ import Videos from "../modules/videos/Videos"
 import ContactUs from "../modules/contact-us/ContactUs"
 import Footer from "../modules/footer/Footer"
 
+
 function IndexPage() {
     return (
         <>
