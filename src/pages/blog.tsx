@@ -45,22 +45,21 @@ function BlogPage({ data }) {
             </Flex>
             <Flex direction="column" w="80%" mt="5em">
             <Box display="flex" alignItems="center">
-                <Text fontSize="5xl" fontWeight="700">
+                <Text fontSize="5xl" fontWeight="700" textAlign={{sm: 'center', lg: 'left'}}>
                     The Graduate Feed
                 </Text>
-                <Box ml={5}><Button text="Subscribe"/></Box>
+                <Box display={{sm: 'none', lg: 'flex'}} ml={5}><Button text="Subscribe"/></Box>
                 </Box>
-                <Flex>
-                <Flex bg="tomato" height="380px" width="50%" mt={10} bgGradient="url('https://picsum.photos/1500/480')" flexDirection="column"/>
-                    <Box width="50%" ml={10} display="flex" flexDirection="column" justifyContent="space-between" >
+                <Flex display="flex" flexDirection={{sm: 'column', md: 'row'}}>
+                    <Flex bg="tomato" height="380px" width={{md: '50%', lg: '100%'}} mt={10} bgGradient="url('https://picsum.photos/1500/480')" flexDirection="column"/>
+                    <Box width={{md: '50%', lg: '100%'}} ml={10} display="flex" flexDirection="column" justifyContent="space-between" >
                         <Box>
                         <Text mt={12}>02/21/2021</Text>
                         <Text fontSize="4xl" fontWeight="700">Graduate education, Five F-Words, and the hindsight of an early-career researcher</Text>
                         <Text mt={1}>This is a test description!</Text>
                         </Box>
-                        <Box display="flex"><Text borderBottom="2px solid #209EBC" mt={1}>Cashion Cain</Text></Box>
+                        <Box display="flex" mt={{sm: 5, lg: 0}}><Text borderBottom="2px solid #209EBC" mt={1}>Cashion Cain</Text></Box>
                     </Box>
-                    
                 </Flex>
                 <SimpleGrid columns={{ md: 2, lg: 3 }} spacing="40px" mt="5em" height="100%">
                     {post.map((post: any) => {
