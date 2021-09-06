@@ -1,0 +1,2 @@
+(self.webpackChunkgrad_cap_finder=self.webpackChunkgrad_cap_finder||[]).push([[373],{6284:function(n,e,a){"use strict";a.r(e);var t=a(7294),u=a(5444),f=a(3431);e.default=function(){return(0,t.useEffect)((function(){(0,u.navigate)("/")}),[]),(0,f.tZ)(t.Fragment,null)}}}]);
+//# sourceMappingURL=component---src-pages-home-tsx-8e3e8b14aec0ccaa4f8e.js.map
