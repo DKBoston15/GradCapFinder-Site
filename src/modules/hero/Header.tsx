@@ -47,7 +47,7 @@ const Header = () => {
             </MenuButton>
             <MenuList>
               <Link to="/current-students">
-                <MenuItem>Schedule Recurring Meeting</MenuItem>
+                <MenuItem>Schedule Meeting</MenuItem>
               </Link>
               <Link to="/current-students">
                 <MenuItem>Make A Payment</MenuItem>
@@ -96,7 +96,7 @@ const Header = () => {
         </Box>
         <Box display={{ base: "none", md: "flex" }}>
           <ReactLink to="contact" smooth={true} duration={1000}>
-            <Button text="Contact Us" />
+            <Button text="Contact Us" variant="contact" />
           </ReactLink>
         </Box>
       </Flex>
