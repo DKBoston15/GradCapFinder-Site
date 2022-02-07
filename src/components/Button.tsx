@@ -1,7 +1,7 @@
 import React, { useMemo, ReactNode } from "react";
 import { Button, ButtonProps } from "@chakra-ui/react";
 
-type TVariant = "primary" | "secondary" | "studyHall" | "contact";
+type TVariant = "primary" | "secondary" | "studyHall" | "contact" | "paypal";
 interface IButtonProps extends ButtonProps {
   text: ReactNode;
   variant?: TVariant;
@@ -54,6 +54,28 @@ const PrimaryButton = ({
           }}
           onClick={(event) =>
             (window.location.href = "https://gradcapfinder.youcanbook.me/")
+          }
+        >
+          {text}
+        </Button>
+      ),
+      paypal: (
+        <Button
+          bg="brand.orange"
+          color="white"
+          boxShadow="lg"
+          w={width}
+          p="7"
+          fontSize={{ base: "14px", md: "18px" }}
+          _hover={{
+            background: "hsl(32, 98%, 45%)",
+          }}
+          _focus={{
+            border: "none",
+          }}
+          onClick={(event) =>
+            (window.location.href =
+              "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9C7JDZGF9DXUC")
           }
         >
           {text}
