@@ -50,7 +50,7 @@ const CurrentStudents = () => {
           <Flex w="20em" h="15em" justify="space-evenly" direction="column">
             <Button text="Schedule Meeting" />
             <Box onClick={() => openPaypal()}>
-              <Button text="Pay Via Paypal" width="100%" />
+              <Button text="Pay Via Paypal" variant="paypal" width="100%" />
             </Box>
             {/* <Button text="Pay Via Venmo" /> */}
             {/* <Button text="Pay with BitCoin" /> */}
