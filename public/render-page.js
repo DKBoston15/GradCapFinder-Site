@@ -51554,7 +51554,7 @@ var plugins = [{
     "remarkPlugins": [],
     "rehypePlugins": [],
     "mediaTypes": ["text/markdown", "text/x-markdown"],
-    "root": "/Users/dakotabrown/Documents/GitHub/GradCapFinder-Site"
+    "root": "/Users/cortex/Documents/GradCapFinder-Site"
   }
 }, {
   name: 'gatsby-plugin-google-fonts',
@@ -97907,24 +97907,24 @@ module.exports = warning;
 /***/ }),
 
 /***/ "react-dom/server":
-/*!**********************************************************************************************************!*\
-  !*** external "/Users/dakotabrown/Documents/GitHub/GradCapFinder-Site/node_modules/react-dom/server.js" ***!
-  \**********************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** external "/Users/cortex/Documents/GradCapFinder-Site/node_modules/react-dom/server.js" ***!
+  \**********************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/dakotabrown/Documents/GitHub/GradCapFinder-Site/node_modules/react-dom/server.js");;
+module.exports = require("/Users/cortex/Documents/GradCapFinder-Site/node_modules/react-dom/server.js");;
 
 /***/ }),
 
 /***/ "react":
-/*!*****************************************************************************************************!*\
-  !*** external "/Users/dakotabrown/Documents/GitHub/GradCapFinder-Site/node_modules/react/index.js" ***!
-  \*****************************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** external "/Users/cortex/Documents/GradCapFinder-Site/node_modules/react/index.js" ***!
+  \*****************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/dakotabrown/Documents/GitHub/GradCapFinder-Site/node_modules/react/index.js");;
+module.exports = require("/Users/cortex/Documents/GradCapFinder-Site/node_modules/react/index.js");;
 
 /***/ }),
 

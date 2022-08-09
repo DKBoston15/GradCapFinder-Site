@@ -35,7 +35,7 @@ export default function Example() {
           >
             <Text align={{ base: "center", md: "left" }}>
               Come work and ask questions live with Dr. Bozeman!
-              <Text fontWeight="700">M-S (8AM-10AM CST)</Text>
+              <Text fontWeight="700">M-S (9AM-11AM CST)</Text>
             </Text>
           </Flex>
         </Flex>
